@@ -1,9 +1,8 @@
 #!/bin/bash
 # chmod +x harvest-1.sh
 
-echo "wifi connection"
-## Clears the screen.
-# clear
+
+# Declare names of Wallaby links (ie, their SSIDs).
 bots=(
   "1395-wallaby"
   "1397-wallaby"
@@ -11,6 +10,13 @@ bots=(
   "1407-wallaby"
   "1408-wallaby"
 )
+
+
+# -----------------
+echo "wifi connection"
+## Clears the screen.
+# clear
+
 
 for i in "${bots[@]}"
 do
