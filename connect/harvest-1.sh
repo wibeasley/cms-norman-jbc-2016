@@ -1,7 +1,6 @@
 #!/bin/bash
 # chmod +x harvest-1.sh
 
-
 # Declare names of Wallaby links (ie, their SSIDs).
 bots=(
   "1395-wallaby"
@@ -11,12 +10,10 @@ bots=(
   "1408-wallaby"
 )
 
-
 # -----------------
 echo "wifi connection"
 ## Clears the screen.
 # clear
-
 
 for i in "${bots[@]}"
 do
@@ -26,5 +23,7 @@ do
   scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/jbc-2016/$i/
   echo "You saved from $i."
 done
-#files=( "/etc/passwd" "/etc/group" "/etc/hosts" )
-#limits=( 10, 20, 26, 39, 48)
+
+# ------------------
+
+git add -A
