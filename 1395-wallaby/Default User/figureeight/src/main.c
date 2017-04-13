@@ -45,15 +45,22 @@ int main()
     
     motor(0,50);
     motor(3,50);
-    msleep(2000);
+    msleep(1000);
     
     
     motor(3,50);
     motor(0,00);
-    msleep(1000);
+    msleep(800);
     
     
+    motor(3,50);
+    motor(0,00);
+    msleep(1050);
     
+    
+    motor(3,50);
+    motor(0,50);
+    msleep(5000);
     return 0;
 }
         

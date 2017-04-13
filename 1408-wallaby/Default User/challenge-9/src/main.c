@@ -43,15 +43,34 @@ int main()
     printf("go forward\n");
     motor(0,50);
     motor(3,50);
-    msleep(1500);
+    msleep(1600);
     ao();
     
      set_servo_position(1,1634);
     
     printf("turn left\n");
     motor(0,50);
-    msleep(2500);
-    ao();    
+    msleep(2000);
+    ao(); 
+    
+    set_servo_position(1,1995);
+    
+    set_servo_position(1,1634);
+   
+    set_servo_position(1,1995);
+    
+    printf("turn left\n");
+    motor(0,50);
+    msleep(300);
+    ao();
+    
+     printf("go forward\n");
+    motor(0,50);
+    motor(3,50);
+    msleep(1600);
+    ao();
+    
+     set_servo_position(1,1995);
     
     printf("Hello World\n");
     return 0;
