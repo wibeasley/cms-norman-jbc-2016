@@ -3,11 +3,11 @@
 
 # Declare names of Wallaby links (ie, their SSIDs).
 bots=(
-  "1395-wallaby"
-  "1397-wallaby"
-  "1399-wallaby"
-  "1407-wallaby"
-  "1408-wallaby"
+  "1395-wallaby"  # H & B
+  "1397-wallaby"  # J & L
+  "1399-wallaby"  # E & L
+  "1407-wallaby"  # M & B
+  "1408-wallaby"  # M & M
 )
 
 # -----------------
@@ -21,9 +21,12 @@ do
   nmcli con up $i
   echo "You're connected to $i."
   scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/jbc-2016/$i/
+  # mkdir "1-$i"
+  # echo $i >> "1-$i/destination-$i.txt"
   echo "You saved from $i."
 done
 
 # ------------------
 
 git add -A
+git status

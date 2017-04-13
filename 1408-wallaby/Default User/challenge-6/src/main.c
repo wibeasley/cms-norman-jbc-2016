@@ -4,7 +4,7 @@ int main()
 {
          enable_servos(0);
     enable_servos(1);
-    set_servo_position(0,1900);
+    set_servo_position(0,2000);
     set_servo_position(1,1871);
     
      printf("go forward\n");
@@ -43,13 +43,13 @@ int main()
     
     printf("turn right\n");
     motor(3,50);
-    msleep(1300);
+    msleep(1400);
     ao();
     
     printf("go forward\n");
     motor(3,50);
     motor(0,50);
-    msleep(1500);
+    msleep(1900);
     ao();
     
     printf("go backward\n");
@@ -60,13 +60,30 @@ int main()
     
      printf("turn left\n");
     motor(0,50);
-    msleep(1000);
+    msleep(950);
     ao();
     
      printf("go forward\n");
     motor(0,50);
     motor(3,50);
     msleep(500);
+    ao();
+    
+     set_servo_position(0,1679);
+    set_servo_position(1,626);
+    msleep(1000);
+   
+    motor(0,-50);
+    motor(3,-50);
+    msleep(1500);
+    
+     set_servo_position(0,2000);
+    set_servo_position(1,1871);
+    msleep(1000);
+    
+    motor(0,-50);
+    motor(3,-50);
+    msleep(4500);
     ao();
     
     printf("0,1679\n");
