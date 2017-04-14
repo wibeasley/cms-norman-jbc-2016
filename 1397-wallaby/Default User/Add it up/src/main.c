@@ -19,7 +19,7 @@ int main()
 
     motor(0,-40);
     motor(3,10);
-    msleep(1400);
+    msleep(1500);
     
     motor(0,20);
     msleep(500);
