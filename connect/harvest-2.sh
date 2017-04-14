@@ -31,8 +31,14 @@ do
   # Uncomment to simulate downloading files.
   # mkdir "1-$i"
   # echo $i >> "delete-me-$i/destination-$i.txt"
-
+  
   echo "Completed $i."
 done
 
 echo "Completed loop over Wallabies"
+# ------------------
+
+# Optional: Add the files to the git repository.  Manually, then commit and push.  (I'll try to automate this later.)
+# cd zzzz
+git add -A
+git status

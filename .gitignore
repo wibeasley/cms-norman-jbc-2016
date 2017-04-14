@@ -1,3 +1,12 @@
+### Harvest files
+
+.logs/
+
+# However, allow the readme file to be uploaded to the central repository.
+!*logs/README.md
+
+
+### C & C++ files
 # Object files
 *.o
 *.ko
