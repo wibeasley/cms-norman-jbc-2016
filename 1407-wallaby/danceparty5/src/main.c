@@ -23,7 +23,7 @@ int main()
     printf("turns motors1\n");
     motor(0,50);
     motor(3,20);
-    msleep(10000);
+    msleep(11000);
     ao();
     
     printf("moves motors2\n");
@@ -37,10 +37,10 @@ int main()
     motor(3,-50); 
     msleep(5000);
     
-    
-   
-    
-    
+    printf("turns motors2/n"); 
+    motor(0,-50);
+    motor(3,-20);
+    msleep(11000);
     
     
     
