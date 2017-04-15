@@ -23,5 +23,50 @@ int main()
     motor(0,30);
     motor(3,10);
     msleep(2000);
-    return 0;
-}
+    
+    printf("moves motors2/n");
+    motor(0,50);
+    motor(3,50);
+    msleep(1111);
+    
+    printf("turns motors2/n");
+    motor(0,25);
+    motor(3,50);
+    msleep(1000);
+    
+    printf("moves motors2/n");
+    motor(0,50);
+    motor(3,50);
+    msleep(1000);
+    
+    printf("turns motors3/n");
+    motor(3,50);
+    motor(0,30);
+    msleep(2800);
+    
+    printf("moves motors3/n");
+    motor(0,40);
+    motor(3,40);
+    msleep(2400);
+    
+    printf("moves motors back2/n");
+    motor(0,-50);
+    motor(3,-50);
+    msleep(2000);
+    
+    printf("moves sevros1/n");
+    enable_servos();
+    set_servo_position(0,1627);
+    msleep(1000);
+    
+    printf("disables servos1");
+    disable_servos();
+    
+    printf("turns motors4");
+    motor(0,30);
+    motor(3,-30);
+    msleep(100);
+    
+    
+    
+   return 0;}
