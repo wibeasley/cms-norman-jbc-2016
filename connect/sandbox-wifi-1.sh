@@ -5,8 +5,8 @@
 # scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/1395-wallaby/
 # echo "You saved from 1395-wallaby."
 
-# $i = "1407-wallaby"
-$i = "1395-wallaby"
+# i="1407-wallaby"
+# i="1395-wallaby"
 echo $i
 nmcli con up $i
 echo "You're connected to $i."
