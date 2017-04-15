@@ -24,11 +24,13 @@ enable_servos(0);
     msleep(1500);
     ao();
     
+     set_servo_position(1,961);
+    msleep(1000);
+    
     set_servo_position(0,1618);
     msleep(1000);
     
-    set_servo_position(1,961);
-    msleep(1000);
+   
     
     printf("Hello World\n");
     return 0;
