@@ -60,12 +60,20 @@ int main()
      
     motor(3,50);
     motor(0,50);
-    msleep(5000);
+    msleep(2000);
     
-    
-    motor(0,50);
-    motor(3,00);
+    motor(3,50);
+    motor(0,20);
     msleep(1000);
+    
+    motor(1,50);
+    motor(3,50);
+    msleep(3000);
+    
+    
+    motor(3,50);
+    motor(0,40);
+    msleep(500);
     
     motor(3,50);
     motor(0,50);

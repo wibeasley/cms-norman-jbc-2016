@@ -22,7 +22,7 @@ int main()
     msleep(1500);
     
     motor(0,20);
-    msleep(500);
+    msleep(550);
     
 
     ao();
@@ -47,7 +47,14 @@ int main()
     
     motor(0,20);
     motor(3,20);
-    msleep(700);    
+    msleep(800);    
+    
+    motor(0,30);
+    msleep(760);    
+    
+    motor(0,10);
+    msleep(600);
+    
     
 
     ao();
