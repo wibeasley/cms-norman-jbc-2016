@@ -13,21 +13,21 @@ int main()
     ao();
     
     motor(3,50);
-    msleep(1500);
-    ao();
-    
-    motor(3,50);
-    motor(0,50);
     msleep(1000);
     ao();
     
     motor(3,50);
-    msleep(2000);
+    motor(0,50);
+    msleep(1500);
+    ao();
+    
+    motor(3,50);
+    msleep(2500);
     ao();
     
     motor(3,50);
     motor(0,50);
-    msleep(5100);
+    msleep(5500);
     ao();
     
     printf("Hello World\n");
