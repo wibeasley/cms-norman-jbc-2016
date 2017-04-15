@@ -7,9 +7,12 @@ int main()
      enable_servos();   
     set_servo_position(0,1542);
     set_servo_position(3,1542);  
-  motor(0,50); 
     
-    
+    printf("terns motor 1/n");
+    motor(0,70);    
+    motor(3,00);    
+        
+        
     
     
     

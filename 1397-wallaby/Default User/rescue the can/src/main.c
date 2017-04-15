@@ -39,6 +39,10 @@ int main()
     motor(3,30);
     msleep(700);
     
+    set_servo_position(1,1537);
+    msleep(200);
+    set_servo_position(1,1729);
+    msleep(200);
     set_servo_position(2,1432);
     
     
