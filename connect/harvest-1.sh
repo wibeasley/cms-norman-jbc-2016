@@ -37,3 +37,7 @@ do
 done
 
 echo "Completed loop over Wallabies"
+
+echo "Git add & commit"
+git add -A
+git commit -m "Update during Botball challenge day"
