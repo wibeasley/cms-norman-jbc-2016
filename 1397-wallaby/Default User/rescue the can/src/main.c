@@ -51,15 +51,22 @@ int main()
     
     motor(0,55);
     motor(3,10);
-    msleep(900);
+    msleep(1000);
     
-    motor(3,40);
     motor(0,10);
-    msleep(700);
+    motor(3,55);
+    msleep(550);
     
+    
+    
+    
+    set_servo_position(2,1500);
     motor(0,50);
     motor(3,50);
     msleep(1000);
+    ao();
+    msleep(700);
+    set_servo_position(2,700);
     
     
     
