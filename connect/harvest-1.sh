@@ -8,10 +8,10 @@
 #   Or temporarily comment out the Wallaby in the array below.
 bots=(
   "1395-wallaby"  # H & B
-  # "1397-wallaby"  # J & L
-  # "1399-wallaby"  # E & L
-  # "1407-wallaby"  # M & B
-  # "1408-wallaby"  # M & M
+  "1397-wallaby"  # J & L
+  "1399-wallaby"  # E & L
+  "1407-wallaby"  # M & B
+  "1408-wallaby"  # M & M
 )
 
 # -----------------
