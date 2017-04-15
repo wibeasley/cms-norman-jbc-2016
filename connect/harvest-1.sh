@@ -40,4 +40,5 @@ echo "Completed loop over Wallabies"
 
 echo "Git add & commit"
 git add -A
+git status
 git commit -m "Update during Botball challenge day"
