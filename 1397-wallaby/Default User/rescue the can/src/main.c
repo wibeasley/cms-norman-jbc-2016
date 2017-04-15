@@ -66,8 +66,8 @@ int main()
     msleep(1000);
     ao();
     msleep(700);
-    set_servo_position(2,700);
-    
+    set_servo_position(2,828);
+    msleep(1000);
     
     
     ao();

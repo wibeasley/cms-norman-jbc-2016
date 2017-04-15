@@ -38,6 +38,11 @@ int main()
     motor(0,50);
     msleep(1300);
     
+    printf("turning\n");
+    motor(3,50);
+    motor(0,0);
+    msleep(1300);
+    
     
     
     
