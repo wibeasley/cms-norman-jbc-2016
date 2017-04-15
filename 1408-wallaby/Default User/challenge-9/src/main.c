@@ -4,111 +4,37 @@ int main()
 {
     enable_servos(0);
     enable_servos(1);
-    set_servo_position(0,1075);
-    set_servo_position(1,1995);
-    
-    printf("go forward\n");
-    motor(0,50);
-    motor(3,50);
-    msleep(1200);
-    ao();
-    
-    printf("turn right\n");
-    motor(3,50);
-    msleep(2000);
-    ao();
-    
-    printf("go forward\n");
-    motor(0,50);
-    motor(3,50);
-    msleep(1200);
-    ao();
-    
-    printf("go backwards\n");
-    motor(0,-50);
-    motor(3,-50);
-    msleep(1500);
-    ao();
-    
-    printf("turn left\n");
-    motor(0,50);
-    msleep(2000);
-    ao();
-    
-    printf("turn right\n");
-    motor(3,50);
-    msleep(1500);
-    ao();
-    
-    printf("go forward\n");
-    motor(0,50);
-    motor(3,50);
-    msleep(1600);
-    ao();
-    
-     set_servo_position(1,1634);
-    
-    printf("turn left\n");
-    motor(0,50);
-    msleep(2000);
-    ao(); 
-    
-    set_servo_position(1,1995);
-    
-    set_servo_position(1,1634);
+    set_servo_position(0,1216);
+    set_servo_position(1,1365);
    
-    set_servo_position(1,1995);
-    
-    printf("turn left\n");
-    motor(0,50);
-    msleep(300);
-    ao();
-    
-     printf("go forward\n");
     motor(0,50);
     motor(3,50);
-    msleep(1700);
+    msleep(4700);
     ao();
     
-     set_servo_position(1,1995);
+    set_servo_position(1,2047);
+    msleep(1000);
     
-    printf("go backward\n");
-    motor(0,-50);
-    motor(3,-50);
-    msleep(600);
-    ao();
+    set_servo_position(1,1365);
+    msleep(1000);
     
-    printf("turn right\n");
-    motor(3,50);
-    msleep(600);
-    ao();
-    
-    printf("go forward\n");
     motor(0,50);
     motor(3,50);
-    msleep(500);
+    msleep(1500);
     ao();
+     
+    set_servo_position(1,2047);
+    msleep(1000);
     
-   printf("go backwards\n"); 
-    motor(0,-50);
-    motor(3,-50);
-    msleep(500);
-    ao();
-    
-    printf("turn right\n");
-    motor(3,50);
-    msleep(700);
-    ao();
-    
-    printf("turn left\n");
-    motor(0,50);
-    msleep(700);
-    ao();
+    set_servo_position(1,1365);
+    msleep(1000);
     
     motor(0,-50);
     motor(3,-50);
-    msleep(7500);
+    msleep(6000);
     ao();
+    
+    
     printf("Hello World\n");
     return 0;
 }

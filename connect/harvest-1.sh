@@ -7,11 +7,11 @@
 #   If a wallaby is missing or out of range, the script will scipt over it after the nmcli times out.
 #   Or temporarily comment out the Wallaby in the array below.
 bots=(
-  "1395-wallaby"  # H & B
+  # "1395-wallaby"  # H & B
   "1397-wallaby"  # J & L
   "1399-wallaby"  # E & L
   "1407-wallaby"  # M & B
-  "1408-wallaby"  # M & M
+  # "1408-wallaby"  # M & M
 )
 
 # -----------------
@@ -27,7 +27,7 @@ do
   #   Currently, after a failed connecion, nothing is downloaded, and it moves on to the next Wallaby.
   #   (Possibly is downloads again from the previous Wallaby.)
   echo "Attempting to download files from $i."
-  scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/jbc-2016/$i/
+  scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
 
   # Uncomment to simulate downloading files.
   # mkdir "1-$i"
@@ -37,3 +37,8 @@ do
 done
 
 echo "Completed loop over Wallabies"
+
+echo "Git add & commit"
+git add -A
+git status
+git commit -m "Update during Botball challenge day"

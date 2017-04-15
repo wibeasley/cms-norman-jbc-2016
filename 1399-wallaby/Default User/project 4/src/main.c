@@ -20,7 +20,7 @@ int main()
     printf("turning\n");
     motor(3,50);
     motor(0,30);
-    msleep(3000);
+    msleep(2000);
     
     printf("turning\n");
     motor(3,50);
@@ -36,5 +36,17 @@ int main()
     motor(3,50);
     motor(0,20);
     msleep(2000);
+    
+    printf("turning\n");
+    motor(3,25);
+    motor(0,50);
+    msleep(4500);
+    
+    printf("going straight\n");
+    motor(3,50);
+    motor(0,50);
+    msleep(3500);
+    
+    
     return 0;
 }

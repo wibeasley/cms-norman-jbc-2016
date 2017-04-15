@@ -5,9 +5,7 @@ int main()
      printf("servos get reedy.\n");
      enable_servos();   
     set_servo_position(0,1893);
-    set_servo_position(3,770);  
-    
-    
+    set_servo_position(3,486);  
     
     printf("moves motors1\n");
     motor(0,50);
@@ -65,8 +63,25 @@ int main()
     printf("turns motors4");
     motor(0,30);
     motor(3,-30);
-    msleep(100);
+    msleep(550);
     
+    printf("moves motors4/n");
+    motor(0,50);
+    motor(3,50);
+    msleep(2000);
     
+    printf("closes servo1/n");
+    enable_servos();
+    set_servo_position(3,0);
+    msleep(300);
     
-   return 0;}
+    printf("disables servos2");
+    disable_servos();
+    
+    printf("moves motors back3/n");
+    motor(0,-50);
+    motor(3,-50);
+    msleep(1500);
+    
+   return 0;
+}
