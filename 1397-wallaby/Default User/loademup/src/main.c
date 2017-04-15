@@ -5,7 +5,7 @@ int main()
     
     printf("go straight\n");
     enable_servos();
-    set_servo_position(1,1704);
+    set_servo_position(1,2060);
     set_servo_position(2,1798);
     
     motor(0,40);
@@ -36,7 +36,7 @@ int main()
     motor(3,60);
     msleep(600);
     
-    set_servo_position(1,1598);
+    set_servo_position(1,1465);
     
     
     
@@ -76,6 +76,9 @@ int main()
     motor(0,-10);
     motor(3,60);
     msleep(400);
+    
+    set_servo_position(1,2060);
+    
     
     
     motor(0,50);

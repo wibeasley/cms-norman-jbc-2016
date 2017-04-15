@@ -14,11 +14,16 @@ int main()
     motor(3,50);
     msleep(2000);
     
+    enable_servos();
+    set_servo_position(1,1894);
+    set_servo_position(3,870);
+    msleep(1000)
     
     
     
     
     
     
-    return 0;
+    
+    ;return 0;
 }

@@ -11,7 +11,7 @@ int main()
     motor(3,50);
     msleep(957);
 
-    set_servo_position(1,2048);
+    set_servo_position(1,2060);
     msleep(800);
     set_servo_position(1,1458);
     msleep(800);
@@ -22,23 +22,23 @@ int main()
     msleep(3740);
        
     
-    set_servo_position(1,2050);
+    set_servo_position(1,2060);
     msleep(800);
     set_servo_position(1,1458);
     msleep(800);
     
     motor(3,50);
     motor(0,-15);
-    msleep(950);
+    msleep(1100);
     
     
     
     motor(3,-10);
     motor(0,-10);
-    msleep(800);
+    msleep(600);
     
     ao();
-    set_servo_position(1,2050);
+    set_servo_position(1,2060);
     msleep(800);
     set_servo_position(1,1456);
     msleep(800);
