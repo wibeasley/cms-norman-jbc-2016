@@ -21,6 +21,7 @@ for i in "${bots[@]}"
 do
   echo "Attempting to connect to $i."
   nmcli con up $i
+  ping -c 2 192.168.125.1
 
   # TODO: enclose this in if-block, and skip if the connection failed.
   #   Currently, after a failed connecion, nothing is downloaded, and it moves on to the next Wallaby.

@@ -26,12 +26,16 @@ do
   #   Currently, after a failed connecion, nothing is downloaded, and it moves on to the next Wallaby.
   #   (Possibly is downloads again from the previous Wallaby.)
   echo "Attempting to download files from $i."
-  scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/jbc-2016/$i/
+  scp -rcv root@192.168.125.1:'~/Documents/KISS/Default\ User/' \
+    ~/Documents/kipr/jbc-2016/$i/ >> ~/Documents/kipr/jbc-2016/.logs/aa.md
 
   # Uncomment to simulate downloading files.
   # mkdir "1-$i"
   # echo $i >> "delete-me-$i/destination-$i.txt"
-  
+
+
+  date "+%F %T $i" >>  ~/Documents/kipr/jbc-2016/.logs/aa.md
+
   echo "Completed $i."
 done
 
@@ -42,3 +46,6 @@ echo "Completed loop over Wallabies"
 # cd zzzz
 git add -A
 git status
+# git diff --cached
+
+exit 0
