@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# nmcli con up 1399-wallaby
-# echo "You're connected to 1399-wallaby."
-# scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/jbc-2016/1399-wallaby/
-# echo "You saved from 1399-wallaby."
+nmcli con up 1395-wallaby
+echo "You're connected to 1395-wallaby."
+scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/1395-wallaby/
+echo "You saved from 1395-wallaby."
 
 # $i = "1407-wallaby"
 $i = "1395-wallaby"
