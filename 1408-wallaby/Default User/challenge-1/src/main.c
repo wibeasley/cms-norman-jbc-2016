@@ -9,11 +9,11 @@ int main()
 
     motor(0,50);
     motor(3,50);
-    msleep(4800);
+    msleep(5200);
 
     motor(0,-50);
     motor(3,-50); 
-    msleep(4800);
+    msleep(5200);
     ao();
     printf("Hello World\n");
     return 0;
