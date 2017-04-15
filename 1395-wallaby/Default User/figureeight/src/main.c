@@ -85,7 +85,7 @@ int main()
     
   motor(0,50);
     motor(3,50);
-    msleep(2000);
+    msleep(3000);
     
     return 0;
 }
