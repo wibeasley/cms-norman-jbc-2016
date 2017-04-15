@@ -15,7 +15,7 @@ int main()
     msleep(1000);
     
     enable_servos();
-    set_servo_position(1,1894);
+    set_servo_position(1,2047);
     set_servo_position(3,870);
     msleep(1000)
     
