@@ -24,13 +24,18 @@ enable_servos(0);
     msleep(800);
     ao();
     
+    motor(0,50);
+    motor(3,50);
+    msleep(1000);
+    ao();
+    
     motor(3,50);
     msleep(1000);
     ao();
     
     motor(0,50);
     motor(3,50);
-    msleep(1000);
+    msleep(1500);
     ao();
     
     motor(3,50);
@@ -40,6 +45,10 @@ enable_servos(0);
      set_servo_position(1,1120);
     msleep(1000);
     
+    motor(0,50);
+    motor(3,50);
+    msleep(1000);
+    ao();
      set_servo_position(1,1641);
     msleep(1000);
     
@@ -48,6 +57,11 @@ enable_servos(0);
     
     motor(0,-50);
     msleep(2000);
+    ao();
+    
+    motor(0,50);
+    motor(3,50);
+    msleep(1500);
     ao();
     printf("Hello World\n");
     return 0;

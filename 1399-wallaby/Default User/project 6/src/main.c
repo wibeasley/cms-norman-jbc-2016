@@ -12,12 +12,21 @@ int main()
     printf("going straight\n");
     motor(0,50);
     motor(3,50);
-    msleep(2000);
+    msleep(1000);
     
     enable_servos();
     set_servo_position(1,1894);
     set_servo_position(3,870);
     msleep(1000)
+    
+    ;enable_servos();
+    set_servo_position(1,1448);
+    msleep(500)
+    
+    ; printf("turning\n");
+    ;motor(3,50);
+    motor(0,10);
+    msleep(3000);
     
     
     
