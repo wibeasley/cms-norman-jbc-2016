@@ -92,6 +92,9 @@ enable_servos(0);
     msleep(1000);
     ao();
     
+             set_servo_position(1,1614);
+    msleep(1000);
+    
     printf("Hello World\n");
     return 0;
 }
