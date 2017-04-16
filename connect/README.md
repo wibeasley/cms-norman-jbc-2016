@@ -20,3 +20,23 @@
     1. Controller version (*e.g.*, 'Wallaby v23') so theoretically it could accommodate institutions that have a heterogenous fleet (even beyond Wallabies in the future).
     1. File transfer protocol.  If blank, default to 'scp'; possibly support rsync in the future.
 1. If one SSID/Link has multiple users, nest them all in a single `nmcli` call, to be more efficient.
+1. Separate the script that runs the backups, from the backups.  Right now, everything is bundled in this [same repo](https://github.com/wibeasley/cms-norman-jbc-2016).
+
+## Long-term TODOs and possibilities:
+
+1. Most of the follow probably outgrows what Bash can do easily.  It probably should be written in Python, and a distributed a module.  That way, you can push updates to users with [pip](https://pypi.python.org/pypi/pip).  It might make it easier for schools with only Windows machines, and cannot run a Linux machine for their backup server.
+
+1. Produce a report to help determine
+    1. When a Wallaby was last backed up.
+    1. Battery life of each Wallaby at the last backup.
+    1. Wi-Fi strength/health of each Wallaby.
+    1. Number of users (and their number of programs) for each Wallaby.
+    1. Code health or code complexity (*e.g.*, [lizard](https://github.com/terryyin/lizard)) of each program.
+1. Destination of backups, such as AWS S3.  Like Git/GitHub, you can easily [cached your credentials](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) so nothing is stored in the configuration file.  Ideally this location is in the cloud, so the backup utility runs just as easily at competitions as at the home institutions during class.  
+    
+1. However, I would still advocate GitHub. 
+    1. It is easy to turn back the clock to any commit, even if it was months ago.  Especially with [SourceTree](https://www.sourcetreeapp.com/).
+    1. The previous code versions can be accessed through the browser (on GitHub.com), or form the backup machine.
+    1. It is probably easier to manage the connections.  You can run commits every ~10 minutes (when you're connecting only to the Wallabies, and you're not on the internet).  Every ~1 hour, connect to the internet, and push the 6 commits to the central GitHub server. 
+    1. Private repositories are [free for schools](https://education.github.com/), for those institutions who care about being scooped.  
+1. In addition to writing to the `.logs/` directory, write to a SQLite database.  That would make the real-time report much easier to generate.
