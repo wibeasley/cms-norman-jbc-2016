@@ -40,3 +40,9 @@
     1. It is probably easier to manage the connections.  You can run commits every ~10 minutes (when you're connecting only to the Wallabies, and you're not on the internet).  Every ~1 hour, connect to the internet, and push the 6 commits to the central GitHub server. 
     1. Private repositories are [free for schools](https://education.github.com/), for those institutions who care about being scooped.  
 1. In addition to writing to the `.logs/` directory, write to a SQLite database.  That would make the real-time report much easier to generate.
+
+## Current Limitations
+(CMS Norman can easily live with these.  Just brainstorming for bigger/older schools with more at stake.)
+
+1. This only backs up code.  It lacks an automated way to recover code.  If disaster strikes, it is probably easiest to let the student browse the code on GitHub.com.
+1. Even w/ a private repository, everyone at a school can see the code for everyone else.  But if this is a probablem, do not give any student access to the repository.  You would have to be by them when the look through and download old versions.
