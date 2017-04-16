@@ -1,5 +1,7 @@
 ## Harvest notes
 
+1. Background: these initial scripts are probably all we (at CMS Norman) will ever need).  Based on our short experience with this backup approach, here are some ideas for expanding into to accommodate other schools and provide more flexible configurations.
+
 1. The `harvest-1.sh` is intended to be the simplest runnable version possible.  Subsequent scripts (*e.g.*, `harvest-2.sh`) should be more efficient and have better error messages, but be more difficult for novice bash scripters to follow or adapt to their own scripts.
 
 1. `scp` is used because `rsync` is not installed on the Wallaby V23.  However, the text files transfer so quickly (<10 sec), any performance benefit of rsync is probably minimal.
@@ -8,19 +10,23 @@
 
 ## Short-term TODOs:
 
-1. Refactor the configuration options out of the scripts.  But them in something like a [yaml](http://www.yaml.org/start.html) or [json](http://www.json.org/) file.
+1. Refactor the configuration options out of the scripts.  Put them in something like a [yaml](http://www.yaml.org/start.html) or [json](http://www.json.org/) file.
 1. Each configuration file should include:
     1. Boolean value for if copied files should bt added & committed to the git repository.
     1. An entry for each Wallaby.
 1. Each Wallaby in the configuration file should include:
     1. SSID.
-    1. location(s) of user files.  If blank, default to `~/Documents/KISS/Default User/`.
+    1. Team/group name.  This label is recorded for the humans to keep track of things better.  No current plans for using it in things like file names.
+    1. source location of user files.  If blank, default to `~/Documents/KISS/Default User/`.  If one Wallaby has *k* users, the configuration file should have *k* different entries.
+    1. destination location of user files.  This field is required.
     1. IP address.  If blank, default to `192.168.125.1`.
     1. Boolean value indicating if the Wallaby shold be backed up.  The toggle makes it easy to exclude a machine (*e.g.*, for being temporarily out of service) so time is not wasted trying to connect to it.    
     1. Controller version (*e.g.*, 'Wallaby v23') so theoretically it could accommodate institutions that have a heterogenous fleet (even beyond Wallabies in the future).
     1. File transfer protocol.  If blank, default to 'scp'; possibly support rsync in the future.
-1. If one SSID/Link has multiple users, nest them all in a single `nmcli` call, to be more efficient.
+1. If one SSID/Link has multiple users, nest them all in a single `nmcli` call, to be more efficient.  Let the program figure out how to bunch the users within one nmcli call.  Keep the configuration file normalized (in the database sense of 'normalized').
 1. Separate the script that runs the backups, from the backups.  Right now, everything is bundled in this [same repo](https://github.com/wibeasley/cms-norman-jbc-2016).
+1. Examples of more advanced WiFi programming w/ Bash:
+    1. http://askubuntu.com/a/602364/153921
 
 ## Long-term TODOs and possibilities:
 
