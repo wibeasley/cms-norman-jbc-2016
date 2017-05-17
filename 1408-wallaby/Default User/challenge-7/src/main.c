@@ -1,56 +1,95 @@
-#include <kipr/botball.h>
 
+#include <kipr/botball.h>
 int main()
 {
-    printf("go forward\n");
-    msleep(500);
-    motor(0,50);
-    motor(3,50);
-    msleep(500);
-    ao();
-    
-    printf("grab can\n");
-    msleep(500);
     enable_servos(1);
     enable_servos(0);
-    set_servos_position(0,1660);
-    set_servos_position(1,);
-    ao;
+    set_servo_position(0,1572);
+    set_servo_position(1,1613); 
     
-  motor(0,0);
+    motor(0,50);
     motor(3,50);
+    msleep(500);
+    ao();
+    
+     set_servo_position(1,822);
     msleep(1000);
-  ao();
     
-    set_servos_position(1,2020);
-    set_servos_position(0,720);
+    set_servo_position(0,815);
+    msleep(1000);
+    
+    motor(0,-50);
+    motor(3,-50);
+    msleep(1000);
     ao();
     
     motor(3,50);
-    motor(0,0);
-    msleep(500);
-      ao();
+    msleep(1500);
+    ao();
     
-    motor(3,50);
+        set_servo_position(0,1566);
+    msleep(1000);
+    
+       set_servo_position(1,1124);
+    msleep(1000);
+    
+     set_servo_position(1,1653);
+    msleep(1000);
+    
+    motor(0,-50);
+    motor(3,-50);
+    msleep(1000);
+    ao();
+    
     motor(0,50);
-    msleep(500);
-    ao();
-    
-    motor(3,50);
-    motor(0,0);
-    msleep(500);
-    ao();
-    
-    set_servos_position(0,1650);
-    set_servos_position(3,);
+    msleep(1500);
     ao();
     
     motor(0,50);
+    motor(3,50);
+    msleep(1500);
+    ao();
+    
+    set_servo_position(0,1566);
+    msleep(1000);
+    
+       set_servo_position(1,1124);
+    msleep(1000);
+    
+    motor(0,-50);
+    motor(3,-50);
+    msleep(2500);
+    ao();
+    
+    motor(0,50);
+    msleep(2000);
+    ao();
+    
+    motor(0,0);
     motor(3,0);
     msleep(1000);
-    ao();h
+    ao();
+     
+         set_servo_position(1,1653);
+    msleep(1000);
+
+    motor(0,-50);
+    motor(3,-50);
+    msleep(1000);
+    ao();
     
-   printf("Hello World\n");
+     motor(3,50);
+    msleep(1700);
+    ao();
+    
+    motor(0,50);
+    motor(3,50);
+    msleep(3000);
+    ao();
+    
+   
+
+           
+    printf("Hello World\n");
     return 0;
 }
-
