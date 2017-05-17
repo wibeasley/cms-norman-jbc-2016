@@ -6,7 +6,7 @@
 # echo "You saved from 1395-wallaby."
 
 # i="1407-wallaby"
-# i="1395-wallaby"
+i="1395-wallaby"
 echo $i
 nmcli con up $i
 echo "You're connected to $i."
