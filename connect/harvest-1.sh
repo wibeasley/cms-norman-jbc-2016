@@ -7,9 +7,9 @@
 #   If a wallaby is missing or out of range, the script will scipt over it after the nmcli times out.
 #   Or temporarily comment out the Wallaby in the array below.
 bots=(
-  "1395-wallaby"  # H & B
+  #"1395-wallaby"  # H & B
   # "1397-wallaby"  # J & L
-  # "1399-wallaby"  # E & V
+  "1399-wallaby"  # E & V
   # "1407-wallaby"  # M & B
   # "1408-wallaby"  # M & M
   # "2486-wallaby"  # V & C
