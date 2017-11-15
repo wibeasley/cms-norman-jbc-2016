@@ -9,8 +9,8 @@
 bots=(
   #"1395-wallaby"  # H & B
   # "1397-wallaby"  # J & L
-  "1399-wallaby"  # E & V
-  # "1407-wallaby"  # M & B
+  # "1399-wallaby"  # E & V
+  "1407-wallaby"  # M & B
   # "1408-wallaby"  # M & M
   # "2486-wallaby"  # V & C
   # "2488-wallaby"  # M & A

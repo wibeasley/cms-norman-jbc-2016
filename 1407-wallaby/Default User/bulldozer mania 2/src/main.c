@@ -46,7 +46,7 @@ int main()
     printf("moves motors 3\n");
     motor(0,50);
     motor(3,50);
-    msleep(6757);
+    msleep(10000);
     
     
     
