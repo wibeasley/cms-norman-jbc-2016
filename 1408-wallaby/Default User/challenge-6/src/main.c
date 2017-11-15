@@ -1,10 +1,11 @@
+
 #include <kipr/botball.h>
 
 int main()
 {
          enable_servos(0);
     enable_servos(1);
-    set_servo_position(0,2000);
+    set_servo_position(0,1616);
     set_servo_position(1,1871);
     
      printf("go forward\n");
@@ -69,7 +70,7 @@ int main()
     msleep(500);
     ao();
     
-     set_servo_position(0,1679);
+     set_servo_position(0,1616);
     set_servo_position(1,626);
     msleep(1000);
    
@@ -77,7 +78,7 @@ int main()
     motor(3,-50);
     msleep(1500);
     
-     set_servo_position(0,2000);
+     set_servo_position(0,1616);
     set_servo_position(1,1871);
     msleep(1000);
     
@@ -86,7 +87,7 @@ int main()
     msleep(4500);
     ao();
     
-    printf("0,1679\n");
+    printf("8-3\n");
     printf("Hello World\n");
     return 0;
 }

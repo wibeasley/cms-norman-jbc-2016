@@ -9,7 +9,7 @@ int main()
     
     motor(0,50);
     motor(3,50);
-    msleep(4000);
+    msleep(3500);
     ao();
     
     motor(0,50);
@@ -34,7 +34,7 @@ int main()
 
     
     
-    
+    printf("6-2\n");
     printf("Hello World\n");
     return 0;
 }

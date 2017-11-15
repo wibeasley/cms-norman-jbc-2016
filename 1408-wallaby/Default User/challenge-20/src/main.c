@@ -8,7 +8,7 @@ enable_servos(0);
   set_servo_position(1,1941);
     
     motor(3,50);
-    motor(0,50);
+    motor(0,51);
     msleep(6500);
     ao();
     
@@ -81,7 +81,7 @@ enable_servos(0);
     ao();
     
     motor(0,50);
-    msleep(500);
+    msleep(200);
     ao();
     
          set_servo_position(1,1213);
@@ -95,6 +95,6 @@ enable_servos(0);
              set_servo_position(1,1614);
     msleep(1000);
     
-    printf("Hello World\n");
+    printf("d by -4\n");
     return 0;
 }

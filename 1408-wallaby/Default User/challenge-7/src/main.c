@@ -7,8 +7,8 @@ int main()
     set_servo_position(0,1572);
     set_servo_position(1,1613); 
     
-    motor(0,50);
-    motor(3,50);
+    motor(0,40);
+    motor(3,40);
     msleep(500);
     ao();
     
@@ -18,12 +18,12 @@ int main()
     set_servo_position(0,815);
     msleep(1000);
     
-    motor(0,-50);
-    motor(3,-50);
+    motor(0,-40);
+    motor(3,-40);
     msleep(1000);
     ao();
     
-    motor(3,50);
+    motor(3,40);
     msleep(1500);
     ao();
     
@@ -36,18 +36,18 @@ int main()
      set_servo_position(1,1653);
     msleep(1000);
     
-    motor(0,-50);
-    motor(3,-50);
+    motor(0,-40);
+    motor(3,-40);
     msleep(1000);
     ao();
     
-    motor(0,50);
+    motor(0,40);
     msleep(1500);
     ao();
     
-    motor(0,50);
-    motor(3,50);
-    msleep(1500);
+    motor(0,40);
+    motor(3,40);
+    msleep(1600);
     ao();
     
     set_servo_position(0,1566);
@@ -56,13 +56,13 @@ int main()
        set_servo_position(1,1124);
     msleep(1000);
     
-    motor(0,-50);
-    motor(3,-50);
+    motor(0,-40);
+    motor(3,-40);
     msleep(2500);
     ao();
     
-    motor(0,50);
-    msleep(2000);
+    motor(0,40);
+    msleep(2300);
     ao();
     
     motor(0,0);
@@ -73,23 +73,29 @@ int main()
          set_servo_position(1,1653);
     msleep(1000);
 
-    motor(0,-50);
-    motor(3,-50);
+    motor(0,-40);
+    motor(3,-40);
     msleep(1000);
     ao();
     
-     motor(3,50);
-    msleep(1700);
+     motor(3,40);
+    msleep(1500);
     ao();
     
-    motor(0,50);
-    motor(3,50);
-    msleep(3000);
+    motor(0,40);
+    motor(3,40);
+    msleep(500);
     ao();
     
+     set_servo_position(1,1124);
+    msleep(1000);
    
-
-           
+ motor(0,-40);
+    motor(3,-40);
+    msleep(5000);
+    ao();
+    
+    printf("8 by 5\n");
     printf("Hello World\n");
     return 0;
 }
