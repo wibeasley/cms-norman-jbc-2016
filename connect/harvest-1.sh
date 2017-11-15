@@ -45,3 +45,9 @@ echo "Git add & commit"
 git add -A
 git status
 #git commit -m "Update during class"
+
+
+# Manual update over USB
+# scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/1397-wallaby/
+# scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/1408-wallaby/
+# scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/2494-wallaby/
