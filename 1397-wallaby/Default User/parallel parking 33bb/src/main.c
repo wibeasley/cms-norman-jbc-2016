@@ -3,12 +3,12 @@
 int main()
 {
     printf("Hello World\n");
-    motor(0,50);
+    motor(0,55);
     motor(3,50);
-    msleep(9000);
+    msleep(7000);
     
     motor(0,-50);
     motor(3,-50);
-    msleep(2000);
+    msleep(1700);
     return 0;
           }
