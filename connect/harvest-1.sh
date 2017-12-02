@@ -8,13 +8,13 @@
 #   Or temporarily comment out the Wallaby in the array below.
 bots=(
   #"1395-wallaby"  # H & B
-  # "1397-wallaby"  # J & L
-  # "1399-wallaby"  # E & V
-  "1407-wallaby"  # M & B
-  # "1408-wallaby"  # M & M
-  # "2486-wallaby"  # V & C
-  # "2488-wallaby"  # M & A
-  # "2494-wallaby"  # D & L
+  #"1397-wallaby"  # J & L
+  "1399-wallaby"  # E & V
+  #"1407-wallaby"  # M & B
+  #"1408-wallaby"  # M & M
+  #"2486-wallaby"  # V & C
+  #"2488-wallaby"  # M & A
+  #"2494-wallaby"  # D & L
 )
 
 # -----------------
@@ -24,13 +24,13 @@ for i in "${bots[@]}"
 do
   echo "Attempting to connect to $i."
   nmcli con up $i
-  ping -c 2 192.168.125.1
+  ping -c 2 192.168.124.1
 
   # TODO: enclose this in if-block, and skip if the connection failed.
   #   Currently, after a failed connecion, nothing is downloaded, and it moves on to the next Wallaby.
   #   (Possibly is downloads again from the previous Wallaby.)
   echo "Attempting to download files from $i."
-  scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
+  scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
 
   # Uncomment to simulate downloading files.
   # mkdir "1-$i"
