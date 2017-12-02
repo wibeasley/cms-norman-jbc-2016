@@ -2,32 +2,35 @@
 
 int main()
 {
-    printf("move servo up\n");
+    printf("turn servos on\n");
     enable_servos();
-    set_servo_position(1,530); 
+    
+    printf("move servo to position\n");
+    set_servo_position(1,1717); 
+    msleep(500);
+    
+    printf("move servo to position\n");
+    set_servo_position(2,728); 
+    msleep(500);
     
     printf("go forward\n");
-    motor(0,30);
-    motor(3,30);
-   
-    int loop_count = 0;
+    int step_count = 0;
+    while (analog(5)<=2750) {
+        step_count = step_count +1;
+        motor(0,12);
+        motor(3,10);
+        msleep(100);    
+    }    
+    printf("step_count: %i\n ", step_count);
     
-    int top_hat = analog(5);
-    printf("%i\n", top_hat);
+    printf("go backward\n");
+    motor(0,-10);
+    motor(3,-10);
+    msleep(step_count * 100);
     
-     while (top_hat > 200){
-     	top_hat = analog(5);  
-        msleep(8); 
-        loop_count += 1;
-     	printf("%i: %i\n", loop_count, top_hat);    
-     }
-    
-    motor(0,-30);
-    motor(3,-30);
-    msleep(8 * loop_count);
-    
-        
-    
-                          
-   return 0;
+
+
+
+
+    return 0;
 }
