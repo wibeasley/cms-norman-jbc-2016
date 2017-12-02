@@ -1,9 +1,8 @@
 #include <kipr/botball.h>
 int main()
 {
-    printf("Hello World\n");
-  motor(0, 50);
-  msleep(2000);
-  ao();
+    printf("Hello Violet\n");
+    motor(3,20);
+    msleep(3000);
     return 0;
 }
