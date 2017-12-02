@@ -5,48 +5,43 @@ int main()
     printf("Hello World\n");
     
     
-   motor(0,50);
-    motor(3,50);
-    msleep(3000);
-    motor(0,50);
-    motor(3,30);
-    msleep(4000);
+   motor(0,100);
+    motor(2,100);//go striaght
+    msleep(1500);
+   
+    motor(0,100);
+    motor(2,40);//turn 
+    msleep(1500);
     
-    printf("turning\n");
-    motor(3,50);
-    motor(0,20);
-    msleep(4000);
-    
-    printf("turning\n");
-    motor(3,50);
-    motor(0,30);
-    msleep(2000);
-    
-    printf("turning\n");
-    motor(3,50);
-    motor(0,20);
-    msleep(3000);
-    
-    printf("tunrning\n");
-    motor(3,50);
-    motor(0,20);
+    motor(0,60);
+    motor(2,100);//turn
+    msleep(7500);
+   
+    motor(0,100);
+    motor(2,100);//go forward
     msleep(1000);
+   
+   motor(0,100);
+   motor(2,20);//turn 
+   msleep(1000); 
     
-    printf("turning\n");
-    motor(3,50);
-    motor(0,20);
-    msleep(2000);
-    
-    printf("turning\n");
-    motor(3,25);
-    motor(0,50);
-    msleep(4500);
-    
-    printf("going straight\n");
-    motor(3,50);
-    motor(0,50);
-    msleep(3500);
-    
-    
+   motor(2,100); 
+   motor(3,100); 
+   msleep(2000); 
+   
+    ao();
     return 0;
 }
+
+
+
+
+
+
+
+
+
+ 
+    
+    
+

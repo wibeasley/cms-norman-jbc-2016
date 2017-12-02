@@ -73,7 +73,7 @@ int main()
     printf("closes servo1/n");
     enable_servos();
     set_servo_position(3,0);
-    msleep(300);
+    msleep(91);
     
     printf("disables servos2");
     disable_servos();
