@@ -3,7 +3,7 @@
 int main()
 {
     
-     printf("servos get reedy.\n");
+     printf("servos get ready.\n");
      enable_servos();   
     set_servo_position(0,1756);
     set_servo_position(3,63);  
@@ -31,17 +31,17 @@ int main()
     printf("turns motors 3\n");
     motor(0,00);
     motor(3,50);
-    msleep(1500);
+    msleep(2500);
     
     printf("moves motor 2\n");
     motor(0,50);
     motor(3,50);
-    msleep(3000);
+    msleep(2000);
     
     printf("turns motor 3\n");
     motor(0,00);
     motor(3,50);
-    msleep(1295);
+    msleep(1000);
     
     printf("moves motors 3\n");
     motor(0,50);
