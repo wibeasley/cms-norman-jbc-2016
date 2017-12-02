@@ -11,10 +11,10 @@ bots=(
   #"1397-wallaby"  # J & L
   #"1399-wallaby"  # E & V          # USB
   #"1407-wallaby"  # M & B          # USB
-  #"1408-wallaby"  # M & M          # USB
+  # "1408-wallaby"  # M & M          # USB
   #"2486-wallaby"  # V & C
-  "2488-wallaby"  # M & A
-  #"2494-wallaby"  # D & L
+  #"2488-wallaby"  # M & A
+  "2494-wallaby"  # D & L
 )
 
 #url="192.168.124.1"
@@ -52,6 +52,20 @@ git add -A
 git status
 git commit -m "Update during botball event -fall 2017"
 
+# TODO:
+# * if nmcli fails, try USB automatically
+#     *  or at least don't attempt ping & scp
+# * yaml config file that
+#     * stores Wallaby names (instead of a global variable included at the top of the script)
+#     * contains a boolean flag if it should be attempted (if only 4 out of the school's Wallabies are being used, don't bother polling the other three in the closet)
+#     * indicates the users on each Wallaby (instead of backing up only `Default User`)
+#     * stores the SSID of a network w/ an internet connection (eg, the school's) so the `git push` is effective.
+#         * indicate in the yaml whether it should connect & push after backing up.
+#     * default message in the git commits
+#        * (Should this be dynamic?)
+# * outputs a temporary text file that indicates how long it's been since each Wallaby has been successfully backed up.
+#     * this allows the teacher to merely glance at which Wallabies need attention.
+# *
 
 # Manual update over USB
 # scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/1397-wallaby/
