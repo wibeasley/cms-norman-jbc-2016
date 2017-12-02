@@ -23,7 +23,7 @@ echo "Looping over Wallabies"
 for i in "${bots[@]}"
 do
   echo "Attempting to connect to $i."
-  nmcli con up $i
+  # nmcli con up $i
   ping -c 2 192.168.124.1
 
   # TODO: enclose this in if-block, and skip if the connection failed.
