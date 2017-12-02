@@ -15,7 +15,7 @@ set_servo_position(1,1758);
     
     printf("open claw\n");
     enable_servos();
-set_servo_position(2,75);    
+set_servo_position(2,00);    
  msleep(2000);
         
    printf("close claw\n");

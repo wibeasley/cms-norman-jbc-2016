@@ -139,9 +139,10 @@ motor(2,-50);
 motor(0,-50);    
 msleep(2000);    
         
-    
-    
-    
-ao();  
+ motor(0,50);   
+ motor(2,10);   
+ msleep(6000);   
+
+    ao();  
     return 0;
 }
