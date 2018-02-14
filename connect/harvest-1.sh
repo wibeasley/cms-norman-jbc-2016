@@ -7,14 +7,14 @@
 #   If a wallaby is missing or out of range, the script will scipt over it after the nmcli times out.
 #   Or temporarily comment out the Wallaby in the array below.
 bots=(
-  #"1395-wallaby"  # H & B
+  "1395-wallaby"  # H & B
   "1397-wallaby"  # J & L
-  #"1399-wallaby"  # E & V          # USB
-  #"1407-wallaby"  # M & B          # USB
-  # "1408-wallaby"  # M & M          # USB
-  #"2486-wallaby"  # V & C
-  #"2488-wallaby"  # M & A
-  #"2494-wallaby"  # D & L
+  "1399-wallaby"  # E & V          # USB
+  "1407-wallaby"  # M & B          # USB
+  "1408-wallaby"  # M & M          # USB
+  "2486-wallaby"  # V & C
+  "2488-wallaby"  # M & A
+  "2494-wallaby"  # D & L
 )
 
 #url="192.168.124.1"
@@ -50,7 +50,7 @@ echo "Completed loop over Wallabies"
 echo "Git add & commit"
 git add -A
 git status
-git commit -m "Update during botball event -fall 2017"
+git commit -m "Update during class"
 
 # TODO:
 # * if nmcli fails, try USB automatically
