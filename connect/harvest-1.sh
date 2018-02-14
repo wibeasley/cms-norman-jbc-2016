@@ -8,13 +8,13 @@
 #   Or temporarily comment out the Wallaby in the array below.
 bots=(
   #"1395-wallaby"  # H & B
-  "1397-wallaby"  # J & L
+  #"1397-wallaby"  # J & L
   #"1399-wallaby"  # E & V          # USB
   #"1407-wallaby"  # M & B          # USB
   #"1408-wallaby"  # M & M          # USB
-  #"2486-wallaby"  # V & C
-  #"2488-wallaby"  # M & A
-  #"2494-wallaby"  # D & L
+  "2486-wallaby"  # V & C
+  "2488-wallaby"  # M & A
+  "2494-wallaby"  # D & L
 )
 
 #url="192.168.124.1"
@@ -35,7 +35,7 @@ do
   #   (Possibly is downloads again from the previous Wallaby.)
   echo "$url"
   echo "Attempting to download files from $i over $url."
-  scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
+  scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
   #scp -r root@$url:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
 
   # Uncomment to simulate downloading files.
