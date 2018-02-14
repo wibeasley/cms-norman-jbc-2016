@@ -11,4 +11,6 @@ motor(0,100);
 motor(3,50);   
 motor(0,50);    
 motor(0,50);
-motot(0,20);   return 0;
+motor(3,20);   
+    return 0;
+}
