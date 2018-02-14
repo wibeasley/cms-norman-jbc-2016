@@ -8,19 +8,12 @@ motor(0,50);
 motor(2,50);  
 msleep(7000);    
     
-printf("turn clockwise\n");
-motor(0,10);    
-motor(2,60);    
-msleep(5000);    
-    
+   
 printf("go backwards\n");
 motor(2,-50);    
 motor(0,-50);    
 msleep(4000);    
     
-motor(0,-50);    
-motor(2,-10);    
-msleep(4000);  
 
 enable_servos();
 set_servo_position(1,1288);    
@@ -55,11 +48,7 @@ set_servo_position(2,148);
  msleep(2000);              
 disable_servos();    
     
-printf("turn clockwise\n");
-motor(2,-10);    
-motor(0,-50);    
-msleep(2000);    
-    
+   
 printf("go backwards\n");
 motor(2,-50);    
 motor(0,-50);    
@@ -70,14 +59,26 @@ motor(2,50);
 motor(0,50);
 msleep(3000);    
     
-printf("turn clockwise\n");
-motor(2,50);    
-motor(0,10);    
-msleep(2000);    
-    
 motor(2,10);    
 motor(0,50);    
 msleep(2000);  
+    
+//loop
+        
+int spin_count =5;    
+int i =0;
+while(i <spin_count){    
+    printf("loop: % i\n",i);    
+
+    //spin();    
+    //stop();
+    i= i+1;    
+
+motor(0,50);
+motor(2,10);
+msleep(5000);
+
+}
     
 motor(0,50);    
 motor(2,50);    

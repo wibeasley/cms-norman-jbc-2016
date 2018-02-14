@@ -7,9 +7,9 @@ int main()
   motor(0,50);//go forword 
   msleep(8000);  
   
- 
+
     
-  motor(0,5);
+  motor(0,0);
  motor(2,50); //turn right 
  msleep(4000);   
     
