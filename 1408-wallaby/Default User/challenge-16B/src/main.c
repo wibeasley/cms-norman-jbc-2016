@@ -29,10 +29,16 @@ int main()
     motor(3,50);
     motor(0,50);
     msleep(step_count * 100);
+   
+    
+    
+    
+    
+    
     
     printf("turn arond\n");
     motor(0,50);
-    msleep(1000);
+    msleep(3300);
     
     printf("Hello World\n");
     return 0;

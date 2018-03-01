@@ -16,7 +16,7 @@ int main()
     
     printf("moving forward\n");
     int step_count = 0;
-    while (analog (2)<=2700 ) {    
+    while (analog (2) <= 2700 ) {    
         step_count = step_count + 1 ;
         motor(0,10);
         motor(2,10);
