@@ -17,7 +17,7 @@ bots=(
   #"2494-wallaby"  # D & L
 )
 
-#url="192.168.124.1"
+url="192.168.124.1"
 #url="192.168.125.1"
 
 # -----------------
@@ -27,16 +27,19 @@ for i in "${bots[@]}"
 do
   echo "Attempting to connect to $i."
   nmcli con up $i
-  #ping -c 2 "$url"
-  ping -c 2 192.168.124.1
+  ping -c 2 $url
+  #ping -c 2 192.168.124.1
 
   # TODO: enclose this in if-block, and skip if the connection failed.
   #   Currently, after a failed connecion, nothing is downloaded, and it moves on to the next Wallaby.
   #   (Possibly is downloads again from the previous Wallaby.)
-  echo "$url"
+  #echo "url: $url."
   echo "Attempting to download files from $i over $url."
-  scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
-  #scp -r root@$url:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
+  #scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
+  scp_args=`echo -r root@$url:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/`
+  echo "SCP arguments:" $scp_args
+  scp $scp_args
+
 
   # Uncomment to simulate downloading files.
   # mkdir "1-$i"
@@ -71,3 +74,6 @@ git status
 # scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/1397-wallaby/
 # scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/1408-wallaby/
 # scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/2494-wallaby/
+
+# References:
+# - https://stackoverflow.com/questions/26824596/how-can-i-pipe-the-hostname-into-a-call-to-ssh
