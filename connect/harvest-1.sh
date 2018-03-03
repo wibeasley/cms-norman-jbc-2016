@@ -19,6 +19,7 @@ bots=(
 
 url="192.168.124.1"
 #url="192.168.125.1"
+#url="23.208.224.170" # cisco.com
 
 # -----------------
 echo "Looping over Wallabies"
@@ -27,25 +28,33 @@ for i in "${bots[@]}"
 do
   echo "Attempting to connect to $i."
   nmcli con up $i
-  ping -c 2 $url
-  #ping -c 2 192.168.124.1
+  ping -c 1 $url
+  ping_return=$?
+
+  echo "ping result: $ping_return (hint: a '0' means a successful ping)."
 
   # TODO: enclose this in if-block, and skip if the connection failed.
   #   Currently, after a failed connecion, nothing is downloaded, and it moves on to the next Wallaby.
   #   (Possibly is downloads again from the previous Wallaby.)
   #echo "url: $url."
-  echo "Attempting to download files from $i over $url."
-  #scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
-  scp_args=`echo -r root@$url:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/`
-  echo "SCP arguments:" $scp_args
-  scp $scp_args
+  if [[ $ping_return -eq 0 ]] ; then
+    echo "Ping successful; attempting to download files from $i over $url."
+    #scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
+    scp_args=`echo -r root@$url:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/`
+    echo "SCP arguments:" $scp_args
+    scp $scp_args
+
+    # Uncomment to simulate downloading files.
+    # mkdir "1-$i"
+    # echo $i >> "delete-me-$i/destination-$i.txt"
+
+    echo "Completed $i."
+  else
+    echo "Ping failed; host $i not currently reachable apparently."
+  fi
 
 
-  # Uncomment to simulate downloading files.
-  # mkdir "1-$i"
-  # echo $i >> "delete-me-$i/destination-$i.txt"
 
-  echo "Completed $i."
 done
 
 echo "Completed loop over Wallabies"
@@ -77,3 +86,4 @@ git status
 
 # References:
 # - https://stackoverflow.com/questions/26824596/how-can-i-pipe-the-hostname-into-a-call-to-ssh
+# - https://stackoverflow.com/questions/6118948/bash-loop-ping-successful
