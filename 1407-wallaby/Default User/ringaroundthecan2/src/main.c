@@ -2,18 +2,18 @@
 
 int main() {
     printf("moves motors 1\n");
-    motor(0,95);
-    motor(3,90);
-    msleep(3000);
+    motor(0,55);
+    motor(3,50);
+    msleep(4000);
     
     printf("turns motors 1\n");
-    motor(0,95);
-    motor(3,30);
-    msleep(2750);
+    motor(0,50);
+    motor(3,10);
+    msleep(4500);
     
     printf("moves motors 2\n");
-    motor(0,85);
-    motor(3,80);
+    motor(0,55);
+    motor(3,50);
     msleep(4500);
     return 0;
 }
