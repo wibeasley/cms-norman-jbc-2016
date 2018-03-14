@@ -12,7 +12,7 @@ int main()
     motor(3,69);
     motor(0,25);
     msleep(7300);
-    printf("go forward");
+    printf("go f orward");
     motor(3,69);
     motor(0,69);
     msleep(2500);
@@ -21,12 +21,12 @@ int main()
     motor(0,40);
     msleep(12000);
     printf("go forward");
-    motor(3,60);
-    motor(0,60);
+    motor(3,50);
+    motor(0,50);
     msleep(2000);
     printf("turn clockwise");
-    motor(0,80);
-    motor(3,40);
+    motor(0,77);
+    motor(3,31);
     msleep(5000);
     
     //motor(0,50);
