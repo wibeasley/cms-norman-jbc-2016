@@ -23,32 +23,35 @@ int main()
     printf("go forward");
     motor(3,50);
     motor(0,50);
-    msleep(2000);
+    msleep(1000);
     printf("turn clockwise");
-    motor(0,77);
+    motor(0,60);
     motor(3,31);
     msleep(5000);
     
-    //motor(0,50);
-    //motor(3,50);
-    //msleep(500);
+     printf("go forward");
+    motor(0,50);
+    motor(3,50);
+    msleep(1000);
     
-   //motor(0,50);
-    //motor(3,50);
-    //msleep(1000);
-     
-    //motor(0,50);
-    //motor(3,50);
-    //msleep(1000); 
+   printf("turn counterclockwise"); 
+   motor(3,30);
+    motor(0,60);
+    msleep(1000);
     
-    //motor(0,60);
-    //motor(3,30);
-   // msleep(2000);
-     
-    printf("go backward");
-    motor(3,-100);
-    motor(0,-100);
+    printf("go forward"); 
+    motor(0,50);
+    motor(3,50);
+    msleep(1000); 
+    
+    motor(0,60);
+    motor(3,30);
     msleep(2000);
+     
+   // printf("go backward");
+    //motor(3,-100);
+    //motor(0,-100);
+    //msleep(2000);
    // printf("go forward");
    // motor(3,90);
    // motor(0,80);
