@@ -4,9 +4,9 @@ int main()
 {
     printf("Hello World\n");
     enable_servos();
-    set_servo_position(1,1722);
+    set_servo_position(1,1146);//parrallel to the ground
     msleep(800);
-    set_servo_position(2,1281);
+    set_servo_position(2,1281);//open claw
     msleep(800);
     
    printf("go straight\n");
@@ -18,9 +18,9 @@ int main()
     motor(3,00);
     msleep(300);
 
-    set_servo_position(2,824);
+    set_servo_position(2,871);//close claw
     msleep(800);
-    set_servo_position(1,700);
+    set_servo_position(1,370);// left up can
     msleep(800);
 
     motor(0,-50);
@@ -39,11 +39,11 @@ int main()
     motor(3,00);
     msleep(300);
 
-    set_servo_position(1,1722);
+    set_servo_position(1,1146);//parrallel to the ground
     msleep(800);
-    set_servo_position(2,1281);
+    set_servo_position(2,1281);//open claw
     msleep(800);
-
+    
     motor(0,-50);
     motor(3,-50);
     msleep(800);
@@ -60,11 +60,11 @@ int main()
     motor(3,00);
     msleep(300);
     
-
-    set_servo_position(2,824);
+    set_servo_position(2,871);//close claw
     msleep(800);
-    set_servo_position(1,700);
+    set_servo_position(1,370);// left up can
     msleep(800);
+    
     
     motor(0,-50);
     motor(3,-50);
@@ -78,9 +78,9 @@ int main()
     motor(3,00);
     msleep(300);
     
-    set_servo_position(1,1722);
+    set_servo_position(1,1146);//parrallel to the ground
     msleep(800);
-    set_servo_position(2,1281);
+    set_servo_position(2,1281);//open claw
     msleep(800);
     
     motor(0,-50);
@@ -99,9 +99,9 @@ int main()
     motor(3,00);
     msleep(300);
     
-    set_servo_position(2,824);
+    set_servo_position(2,871);//close claw
     msleep(800);
-    set_servo_position(1,700);
+    set_servo_position(1,370);// left up can
     msleep(800);
     
     motor(0,-50);
@@ -112,9 +112,9 @@ int main()
     motor(3,00);
     msleep(300);
     
-    set_servo_position(1,1722);
+    set_servo_position(1,1146);//parrallel to the ground
     msleep(800);
-    set_servo_position(2,1281);
+    set_servo_position(2,1281);//open claw
     msleep(800);
 
     return 0;

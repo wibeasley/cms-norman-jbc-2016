@@ -11,10 +11,13 @@ msleep(7000);
    
 printf("go backwards\n");
 motor(2,-50);    
-motor(0,-50);    
-msleep(4000);    
+motor(0,-50);   
+msleep(2000);    
     
-
+motor(0,00);
+motor(2,00);  
+msleep(2000);    
+    
 enable_servos();
 set_servo_position(1,1288);    
  msleep(2000);   
@@ -52,7 +55,7 @@ disable_servos();
 printf("go backwards\n");
 motor(2,-50);    
 motor(0,-50);    
-msleep(4000);    
+msleep(2000);    
     
 printf("go forwards\n");
 motor(2,50);

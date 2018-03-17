@@ -91,6 +91,10 @@ int main()
      set_servo_position(1,1124);
     msleep(1000);
    
+    motor(3,50);
+    msleep(1000);
+    ao();
+    
     motor(0,-40);
     motor(3,-40);
     msleep(5000);

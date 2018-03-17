@@ -14,7 +14,7 @@ int main()
     
   printf("StartWhileLoop\n");
 
-    while (analog (1)<=1800)
+    while (analog (1)>=1800)
     { msleep(10);
      if (analog (5)>=3850)
          {

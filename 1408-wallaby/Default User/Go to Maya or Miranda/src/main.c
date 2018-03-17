@@ -16,6 +16,24 @@ int main()
         msleep(100);
     }  
     
+    //turn left
+    //go forward
+    //grab can 
+    //go backwards little bit
+    //turn left
+    //drop can
+    //backwards little bit
+    //turn left
+    //go forward
+    //turn right
+    //go forward
+    //turn right
+    //turn left
+    //go forward
+    //grab can
+    //go backwards
+    //turn right
+    //go backwards
     printf("Hello World\n");
     return 0;
 }

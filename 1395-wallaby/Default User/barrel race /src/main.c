@@ -10,9 +10,9 @@ int main()
     msleep(2800);
     printf("turn counterclockwise");
     motor(3,69);
-    motor(0,25);
-    msleep(7300);
-    printf("go f orward");
+    motor(0,29);
+    msleep(8000);
+    printf("go forward");
     motor(3,69);
     motor(0,69);
     msleep(2500);
@@ -32,7 +32,7 @@ int main()
      printf("go forward");
     motor(0,50);
     motor(3,50);
-    msleep(1000);
+    msleep(1500);
     
    printf("turn counterclockwise"); 
    motor(3,30);
@@ -43,18 +43,13 @@ int main()
     motor(0,50);
     motor(3,50);
     msleep(1000); 
-    
+    printf("turn");
     motor(0,60);
     motor(3,30);
-    msleep(2000);
-     
-   // printf("go backward");
-    //motor(3,-100);
-    //motor(0,-100);
-    //msleep(2000);
-   // printf("go forward");
-   // motor(3,90);
-   // motor(0,80);
-   // msleep(1000);
+    msleep(3000);
+    printf("go backwards");
+    motor(0,-50);
+    motor(3,-50);
+    msleep(6000);
     return 0;
 }

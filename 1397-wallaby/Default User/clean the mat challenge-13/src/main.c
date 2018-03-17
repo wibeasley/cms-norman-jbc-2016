@@ -17,7 +17,7 @@ int main()
     motor(0,42);
     msleep(700);
     
-    motor(0,0);// 
+    motor(0,0);
     motor(3,0);
     msleep(800);
     
@@ -141,8 +141,8 @@ int main()
     msleep(1600);
     
     printf("turn\n"); 
-    motor(0,40);
-    motor(3,12);
+    motor(0,30);
+    motor(3,2);
     msleep(2450);
     
     printf("go straight\n");

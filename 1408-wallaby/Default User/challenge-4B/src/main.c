@@ -159,7 +159,7 @@ int main()
     printf("Go Foward\n");
     motor(0,50);
     motor(3,50);
-    msleep(2500); 
+    msleep(1500); 
     
     printf("turn right\n");
     motor(0,0);

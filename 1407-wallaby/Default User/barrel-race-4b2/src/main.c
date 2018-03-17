@@ -43,17 +43,17 @@ int main()
       printf("turns motors right\n"); 
    motor(0,00);
    motor(3,50);
-   msleep(1500); 
+   msleep(1000); 
      
     printf("moves motor forword\n"); 
    motor(0,54);
    motor(3,50);
-   msleep(1500); 
+   msleep(1750); 
  
    printf("turns motor left\n");
    motor(0,54);
    motor(3,00);  
-   msleep(1500); 
+   msleep(1700); 
     
    printf("moves motor forword\n"); 
    motor(0,54);
@@ -63,7 +63,7 @@ int main()
    printf("turns motor left\n");
    motor(0,54);
    motor(3,00);  
-   msleep(1500);  
+   msleep(1200);  
     
   printf("moves motor forword\n"); 
    motor(0,54);
@@ -78,17 +78,17 @@ int main()
     printf("moves motor forword\n"); 
    motor(0,54);
    motor(3,50);
-   msleep(1500); 
+   msleep(2000); 
  
    printf("turns motor left\n");
    motor(0,54);
    motor(3,00);  
-   msleep(1750);  
+   msleep(1500);  
     
      printf("moves motor forword\n"); 
    motor(0,54);
    motor(3,50);
-   msleep(1500); 
+   msleep(1800); 
  
    printf("turns motor left\n");
    motor(0,54);
@@ -108,7 +108,7 @@ int main()
    printf("moves motors forward\n") ;
    motor(0,54); 
    motor(3,50); 
-   msleep(2250) ;
+   msleep(2500) ;
     
      printf("turns motor left\n");
    motor(0,54);
@@ -118,7 +118,7 @@ int main()
     printf("moves motors forward\n") ;
    motor(0,54); 
    motor(3,50); 
-   msleep(2250) ; 
+   msleep(2000) ; 
     
   printf("turns motor left\n");
    motor(0,54);
@@ -128,17 +128,17 @@ int main()
     printf("moves motors forward\n") ;
    motor(0,54); 
    motor(3,50); 
-   msleep(2000) ;    
+   msleep(1500) ;    
     
    printf("turns motor left\n");
    motor(0,54);
    motor(3,00);  
-   msleep(1500); 
+   msleep(700); 
     
     printf("moves motors forward\n") ;
    motor(0,54); 
    motor(3,50); 
-   msleep(2000) ;    
+   msleep(1500) ;    
     
    printf("turns motor left\n");
    motor(0,54);
@@ -146,9 +146,9 @@ int main()
    msleep(2000); 
     
      printf("moves motors forward\n") ;
-   motor(0,54); 
+   motor(0,60); 
    motor(3,50); 
-   msleep(4500) ; 
+   msleep(6000) ; 
   
     
          

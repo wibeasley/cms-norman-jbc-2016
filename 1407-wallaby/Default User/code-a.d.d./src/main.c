@@ -5,7 +5,7 @@ int main()
     printf("Hello World\n");
     
     printf("moves motors\n");
-    motor(0,55);
+    motor(0,56);
     motor(3,50);
     msleep(4750);
     ao();
@@ -21,7 +21,7 @@ int main()
    ao(); 
     
    printf("moves motors 2\n"); 
-   motor(0,59); 
+   motor(0,60); 
    motor(3,50); 
    msleep(1500); 
    ao();
