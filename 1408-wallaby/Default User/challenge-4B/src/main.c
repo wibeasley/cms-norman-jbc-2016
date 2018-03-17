@@ -109,12 +109,12 @@ int main()
      printf("Go Backwards\n");
     motor(0,-50);
     motor(3,-50);
-    msleep(2000);
+    msleep(2500);
     
     printf("turn left\n");
     motor(0,50);
     motor(3,0);
-    msleep(2000);
+    msleep(2500);
     
     printf("Go Foward\n");
     motor(0,50);
@@ -149,7 +149,7 @@ int main()
     printf("Go Foward\n");
     motor(0,50);
     motor(3,50);
-    msleep(1000); 
+    msleep(1500); 
     
     printf("turn right\n");
     motor(0,0);

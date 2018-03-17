@@ -2,99 +2,56 @@
 
 int main()
 {
-enable_servos(1);
-enable_servos(0);
-      set_servo_position(0,1618);
-  set_servo_position(1,1941);
+    printf("set servos\n");
+    enable_servos();
+    set_servo_position(0,1391);
+    set_servo_position(1,1602);
+    msleep(200);
     
+    printf("go forward\n");
+    motor(0,50);
     motor(3,50);
-    motor(0,51);
-    msleep(6500);
+    msleep(6800);
     ao();
     
-    set_servo_position(0,822);
-    msleep(1000);
+    printf("set servos\n");
+    set_servo_position(0,1391);
+    set_servo_position(1,952);
+    msleep(200);
     
+    printf("go backward\n");
     motor(0,-50);
     motor(3,-50);
     msleep(2500);
     ao();
     
-    motor(3,50);
-    msleep(800);
-    ao();
-    
+    printf("turn right\n");
     motor(0,50);
-    motor(3,50);
-    msleep(1000);
-    ao();
-    
-    motor(3,50);
-    msleep(1000);
-    ao();
-    
-    motor(0,50);
-    motor(3,50);
     msleep(1500);
     ao();
     
-    motor(3,50);
-    msleep(1500);
-    ao();
-    
-     set_servo_position(1,1120);
-    msleep(1000);
-    
+    printf("go forward\n");
     motor(0,50);
     motor(3,50);
     msleep(2000);
     ao();
     
-     set_servo_position(1,1816);
-    msleep(1000);
-    
-    set_servo_position(0,1614);
-    msleep(1000);
-    
-        motor(3,-50);
-    motor(0,-50);
-    msleep(500);
-    ao();
-    
-    motor(0,-50);
-    msleep(1400);
-    ao();
-    
-
-    
+    printf("turn right\n");
     motor(0,50);
-    motor(3,50);
-    msleep(1300);
+    msleep(2000);
     ao();
     
-        set_servo_position(0,822);
-    msleep(1000);
-    
-    motor(0,-50);
-    motor(3,-50);
-    msleep(1500);
-    ao();
-    
-    motor(0,50);
+    printf("set servos\n");
+    set_servo_position(0,724);
+    set_servo_position(1,952);
     msleep(200);
-    ao();
     
-         set_servo_position(1,1213);
-    msleep(1000);
-    
+    printf("go forward\n");
     motor(0,50);
     motor(3,50);
-    msleep(1000);
+    msleep(2500);
     ao();
     
-             set_servo_position(1,1614);
-    msleep(1000);
-    
-    printf("d by -4\n");
+    printf("2 by 4\n");
     return 0;
 }
