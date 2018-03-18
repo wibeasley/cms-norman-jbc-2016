@@ -3,10 +3,10 @@
 int main()
 {
   
-    int go_forward = 3;
-    int i=0; 
-    while(i<go_forward);{
-    printf("loop:%i\n", i);
+    //int go_forward = 3;
+    //int i=0; 
+    //while(i<go_forward);{
+   // printf("loop:%i\n", i);
         
         printf("go straight 1\n");
         motor(0,55);
@@ -20,17 +20,17 @@ int main()
         //spin();
         //stop();
         
-        i=i+1;
-    }
+//i=i+1;
     
     
     
-    printf("go straight 1\n");
+    
+    printf("go straight 2\n");
     motor(0,55);
     motor(3,50);
     msleep(2000);
     
-    printf("go back 1\n");
+    printf("go back 2\n");
     motor(0,-50);
     motor(3,-50);
     msleep(2000);
@@ -38,18 +38,18 @@ int main()
     printf("up\n");
     set_servo_position(1,708);
     
-    printf("go straight 2\n");
+    printf("go straight 3\n");
     motor(0,54);
     motor(3,50);
     msleep(2000);
     
-    printf("go back 2\n");
+    printf("go back 3\n");
     motor(0,-50);
     motor(3,-51);
     msleep(2000);
     
      printf("down\n");
-    set_servo_position(1,1796);
+    set_servo_position(1,1460);
     
     printf("turn right 1\n");
     motor(0,00);
@@ -62,12 +62,12 @@ int main()
     motor(0,40);
     msleep(2000);
     
-    printf("go straight 1\n");
+    printf("go straight 4\n");
     motor(0,55);
     motor(3,50);
     msleep(1000);
     
-    printf("go back 1\n");
+    printf("go back 4\n");
     motor(0,-50);
     motor(3,-50);
     msleep(2000);
@@ -92,7 +92,7 @@ int main()
     motor(0,00);
     msleep(6000);
     
-    printf("go back 2\n");
+    printf("go back 5\n");
     motor(0,-50);
     motor(3,-51);
     msleep(2000);
@@ -116,7 +116,7 @@ int main()
     motor(3,50);
     msleep(2000);
     printf("down\n");
-    set_servo_position(1,1796);
+    set_servo_position(1,1460);
     
     printf("turn left 4\n");
     motor(3,00);
@@ -131,7 +131,7 @@ int main()
     motor(3,40);
     msleep(2000);
     printf("down\n");
-    set_servo_position(1,1796);
+    set_servo_position(1,1460);
     printf("turn left 5\n");
     motor(3,00);
     motor(0,40);
@@ -141,7 +141,7 @@ int main()
     set_servo_position(1,708);
     
     printf("down\n");
-    set_servo_position(1,2037);
+    set_servo_position(1,1460);
     
     return 0;
 }

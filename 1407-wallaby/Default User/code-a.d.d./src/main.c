@@ -5,9 +5,9 @@ int main()
     printf("Hello World\n");
     
     printf("moves motors\n");
-    motor(0,52);
+    motor(0,56);
     motor(3,50);
-    msleep(5000);
+    msleep(4750);
     ao();
     printf("makes servos ready\n");
     enable_servo(0);
@@ -21,7 +21,7 @@ int main()
    ao(); 
     
    printf("moves motors 2\n"); 
-   motor(0,59); 
+   motor(0,60); 
    motor(3,50); 
    msleep(1500); 
    ao();

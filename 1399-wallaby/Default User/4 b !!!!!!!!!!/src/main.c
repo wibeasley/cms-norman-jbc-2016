@@ -12,7 +12,7 @@ int main()
   printf("tuning\n");
   motor(2,20); 
   motor(0,50); 
-  msleep(10599); 
+  msleep(10700); 
   
   printf("go straight \n");
   motor(0,50);  

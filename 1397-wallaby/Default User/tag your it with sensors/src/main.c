@@ -6,7 +6,7 @@ int main()
     enable_servos();
     
     printf("move servo to position\n");
-    set_servo_position(1,1717); 
+    set_servo_position(1,1067); 
     msleep(500);
     
     printf("move servo to position\n");

@@ -2,11 +2,11 @@
 
 int main()
 {
-  motor(0,80);
-  motor(3,80);
-  msleep(3433);
-  motor(0,-80);
-  motor(3,-80);
-  msleep(3432);
+  motor(0,45);
+  motor(3,40);
+  msleep(6500);
+  motor(0,-45);
+  motor(3,-40);
+  msleep(6500);
   return 0;
 }

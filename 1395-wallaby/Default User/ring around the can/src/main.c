@@ -13,10 +13,12 @@ int main()
     motor (3, 50);
     msleep (6000);
     
+    motor(3,60);
+    motor(0,30);
+    msleep(1000);
     
-    
-    
-    
-    
+    motor (0, 50);
+    motor (3, 50);
+    msleep (6000);
     return(0);
  }
