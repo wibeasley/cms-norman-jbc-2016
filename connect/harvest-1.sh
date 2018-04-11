@@ -21,7 +21,7 @@ bot_ssids=(
 
 # The wifi network connected to the outside world. Necessary if commits are pushed to GitHub.com
 #network_ssid="BeasleyGuest2"
-#network_ssid="NETGEAR18"
+network_ssid="NETGEAR18"
 use_wifi=true
 #use_wifi=false
 
