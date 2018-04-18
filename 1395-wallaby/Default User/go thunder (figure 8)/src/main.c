@@ -7,8 +7,16 @@ int move (int speed_left, int speed_right, int duration){
   return 0;
 }
 int main(){
-  	move(50,50,2000); //forward
-    move(20,50,2000); //turn left
-    move(30,-30,2000); //pivot right
+  	move(50,50,4000); //go forward
+    move(-30,30,1500); //pivot left
+    move(50,50,5000);  //go forwerd
+    move(30,-30,2250); //pivet right
+    move(50,50,4000); //go forwerd
+    move (30,-30,1000); //pivit right
+    move (50,50,3000); // go forwerd
+    move (30,-30,1500);//pivit left
+    
+    
+    
     return 0;
 }
