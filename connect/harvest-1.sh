@@ -40,7 +40,7 @@ do
   echo "Attempting to connect to $i."
 
   if [ "$use_wifi" = true ] ; then
-    nmcli con up $i
+    nmcli con up "$i"
     nmcli_return=$?
     echo "nmcli result: $nmcli_return (hint: a '0' means a successful connection)."
 
