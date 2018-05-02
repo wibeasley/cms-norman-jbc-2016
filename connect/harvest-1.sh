@@ -8,13 +8,13 @@
 #   Or temporarily comment out the Wallaby in the array below.
 bot_ssids=(
   "1395-wallaby"  # H & B
-  #"1397-wallaby"  # J & L
+  "1397-wallaby"  # J & L
   "1399-wallaby"  # E & V          # USB
   "1407-wallaby"  # M & B          # USB
   "1408-wallaby"  # M & M          # USB
-  "2486-wallaby"  # V & C
-  "2488-wallaby"  # M & A
-  "2494-wallaby"  # D & L
+  #"2486-wallaby"  # V & C
+  #"2488-wallaby"  # M & A
+  #"2494-wallaby"  # D & L
   #"NETGEAR18"
   #"BeasleyGuest2"
 )
@@ -22,8 +22,8 @@ bot_ssids=(
 # The wifi network connected to the outside world. Necessary if commits are pushed to GitHub.com
 #network_ssid="BeasleyGuest2"
 network_ssid="NETGEAR18"
-use_wifi=true
-#use_wifi=false
+#use_wifi=true
+use_wifi=false
 
 if [ "$use_wifi" = true ] ; then
   url="192.168.125.1"  # For wifi connections to wallaby
