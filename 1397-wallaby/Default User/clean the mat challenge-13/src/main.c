@@ -14,7 +14,7 @@ int main()
     
     printf("go straight\n");
     motor(3,40);
-    motor(0,42);
+    motor(0,40);
     msleep(700);
     
     motor(0,0);
@@ -26,7 +26,7 @@ int main()
     
     printf("go straight\n");
     motor(3,40);
-    motor(0,47);
+    motor(0,40);
     msleep(1700);
     
     motor(0,0);
@@ -38,7 +38,7 @@ int main()
 
     printf("go backwards\n");
     motor(0,-50);
-    motor(3,-52);
+    motor(3,-50);
     msleep(1000);
 
     printf("turn\n");
@@ -93,7 +93,7 @@ int main()
     
     printf("go straight\n");
     motor(3,50);
-    motor(0,54);
+    motor(0,50);
     msleep(2000);
     
     motor(0,0);

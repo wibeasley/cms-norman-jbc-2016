@@ -1,5 +1,6 @@
 #include <kipr/botball.h>
 //7 from the left,on the cross
+// we fininshed
 int main()
 {
     

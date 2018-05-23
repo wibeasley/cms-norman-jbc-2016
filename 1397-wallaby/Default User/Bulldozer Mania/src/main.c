@@ -1,5 +1,6 @@
 #include <kipr/botball.h>
 //3 from  the "T", bottom left corner
+//we finished!
 int main()
 {
     printf("Hello World\n");

@@ -1,5 +1,5 @@
 #include <kipr/botball.h>
-
+// we finished!
 int main()
 {
     printf("turn servos on\n");

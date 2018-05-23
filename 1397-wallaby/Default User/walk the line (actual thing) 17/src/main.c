@@ -14,7 +14,7 @@ int main() {
         msleep(10);
  	    
         printf("within loop; analog 5 value: %i\n", analog(5));
-        if (analog (5)>=3850) {
+        if (analog (5)>=2435) {
            motor(0,20);
            motor(3,0);
         } else {

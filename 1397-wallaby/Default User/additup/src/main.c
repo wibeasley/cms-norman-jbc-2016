@@ -1,6 +1,7 @@
 
 #include <kipr/botball.h>
 // 6 from t
+// we finished
 int main()
 {
     enable_servos();

@@ -1,5 +1,6 @@
 #include <kipr/botball.h>
 // 3 from t  
+//we finished!
 int main()
 {
 
