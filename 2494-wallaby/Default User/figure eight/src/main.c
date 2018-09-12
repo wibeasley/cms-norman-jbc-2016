@@ -3,7 +3,7 @@
 int main() {
 printf("go forward #1\n");
 motor(3,30);
- motor(0,30);
+ motor(0,50);
 msleep(9000);     
   
 printf("turn right #2\n");

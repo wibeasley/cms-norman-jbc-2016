@@ -6,7 +6,7 @@ int main()
     motor(0,30);
 motor(3,30);
     msleep(8000);
-printf("turn right\n");
+printf(go forward\n");
     motor(0,10);
  motor(3,30);   
 msleep(4000);
