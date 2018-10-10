@@ -8,4 +8,5 @@ int main(
 motor(3,20);
 motor(0,20)    
 msleep(100000);
-return 0}
+return 0;
+}
