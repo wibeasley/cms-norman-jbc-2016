@@ -1,6 +1,6 @@
 #include <kipr/botball.h>
 int main()
 {
-    printf("Hello World\n");
+    printf ("hello william\n");
     return 0;
 }

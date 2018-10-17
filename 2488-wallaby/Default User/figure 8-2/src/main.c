@@ -15,13 +15,22 @@ int main()
     motor(3,100);
     msleep(1000);
 printf("go straight\n");
-    motor(0,60);
-    motor(3,70);
+    motor(0,50);
+    motor(3,50);
     msleep(3000);
     printf("moves mortors right/n");
 printf("turn left");
-motor(0 200);
-    motor(3,50);
-    msleep(2000);
-    return(0);
-}
+motor(0,500);
+    motor(3,30);
+    msleep(5000);
+    printf("go straigt\n");
+   motor(4,60);      
+printf("go straigt\n");    
+   motor(3,30);  
+msleep(900);
+printf("go straigt\n"); 
+ motor(0,50);
+motor(3,50); 
+msleep(2000);    
+return(0);
+}                
