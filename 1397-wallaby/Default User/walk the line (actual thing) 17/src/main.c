@@ -17,10 +17,15 @@ int main() {
         if (analog (5)>=2435) {
            motor(0,20);
            motor(3,0);
-        } else {
+           continue;
+        } else if (analog(5) < 2435){
           motor(0,0);
           motor(3,20);
-		}
+          continue;
+		} 
+        else {
+            break;
+        }    
     }  // end while loop 
 
     ao (); 

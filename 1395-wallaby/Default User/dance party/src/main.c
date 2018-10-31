@@ -11,7 +11,7 @@ int main()
     
     printf("turning1\n");
     motor(0,50);
-    motor(3,00);
+    motor(3,-20);
     msleep(5000);
     
     printf("going forward 2\n");

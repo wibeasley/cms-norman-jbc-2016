@@ -31,6 +31,11 @@ msleep(900);
 printf("go straigt\n"); 
  motor(0,50);
 motor(3,50); 
-msleep(2000);    
+msleep(1000); 
+printf("turn right");
+motor(4,40);
+motor(4,50);
+msleep(1000);    
 return(0);
-}                
+}   
+               

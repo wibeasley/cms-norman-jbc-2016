@@ -20,5 +20,9 @@ int main()
     motor (0, 50);
     motor (3, 50);
     msleep (6000);
+    
+    motor (0, -50);
+    motor (3, -50);
+    msleep (6000);
     return(0);
  }

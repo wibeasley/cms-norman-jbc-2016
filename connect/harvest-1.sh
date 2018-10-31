@@ -10,15 +10,15 @@ bot_ssids=(
   "1395-wallaby"  # B & B
   "1397-wallaby"  # J & V
   "1407-wallaby"  # M & O          # USB
-  "1408-wallaby"  # M & M          # USB
 
   "2486-wallaby"  # L & M
   "2488-wallaby"  # C & D
   "2494-wallaby"  # A & V
 
   "1399-wallaby"  #                # USB
+  "1408-wallaby"  # A & V          # USB
 
-  #"NETGEAR18"
+  "Childrens House"
   #"BeasleyGuest2"
 )
 
