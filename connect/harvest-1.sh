@@ -7,26 +7,23 @@
 #   If a wallaby is missing or out of range, the script will skip over it after the nmcli times out.
 #   Or temporarily comment out the Wallaby in the array below.
 bot_ssids=(
-  "1395-wallaby"  # B & B
-  "1397-wallaby"  # J & V
-  "1407-wallaby"  # M & O          # USB
-
-  "2486-wallaby"  # L & M
-  "2488-wallaby"  # C & D
-  "2494-wallaby"  # A & V
-
-  "1399-wallaby"  #                # USB
-  "1408-wallaby"  # A & V          # USB
-
-  "Childrens House"
+  "1395-wallaby"  # H & B
+  #"1397-wallaby"  # J & L
+  #"1399-wallaby"  # E & V          # USB
+  #"1407-wallaby"  # M & B          # USB
+  #"1408-wallaby"  # M & M          # USB
+  #"2486-wallaby"  # V & C
+  #"2488-wallaby"  # M & A
+  #"2494-wallaby"  # D & L
+  #"4211-wallaby"  # A & B
   #"BeasleyGuest2"
 )
 
 # The wifi network connected to the outside world. Necessary if commits are pushed to GitHub.com
 #network_ssid="BeasleyGuest2"
-#network_ssid="NETGEAR18"
-use_wifi=true
-# use_wifi=false
+network_ssid="State Fair"
+#use_wifi=true
+use_wifi=false
 
 if [ "$use_wifi" = true ] ; then
   url="192.168.125.1"  # For wifi connections to wallaby
@@ -43,7 +40,7 @@ do
   echo "Attempting to connect to $i."
 
   if [ "$use_wifi" = true ] ; then
-    nmcli con up $i
+    nmcli con up "$i"
     nmcli_return=$?
     echo "nmcli result: $nmcli_return (hint: a '0' means a successful connection)."
 
@@ -65,9 +62,9 @@ do
 
   echo "Attempting to download files from $i over $url."
   if [ "$use_wifi" = true ] ; then
-    scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
+    scp -r root@192.168.125.1:'~/Documents/KISS/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
   else
-    scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
+    scp -r root@192.168.124.1:'~/Documents/KISS/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
   fi
   #scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
   #scp_args=`echo -r root@$url:'~/Documents/KISS/Default\\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/`
