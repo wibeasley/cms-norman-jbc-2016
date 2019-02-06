@@ -3,6 +3,9 @@
 int main()
 {
     printf("go staight");
-    
+motor(0,50);
+    motor(3,50);
+    msleep(7000);
+       
     return 0;
 }
