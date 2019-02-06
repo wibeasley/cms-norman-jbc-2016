@@ -88,9 +88,9 @@ git add -A
 git status
 # git commit -m "Update during class"
 
-nmcli con up ${network_ssid}
+nmcli con up "$network_ssid"
 sleep 5s
-echo "Network status to ${network_ssid}: $? (hint: a zero indicates a successful connection)."
+echo "Network status to [${network_ssid}]: $? (hint: a zero indicates a successful connection)."
 #git push # Uncomment to automatically push commits to GitHub.com
 
 # TODO:
