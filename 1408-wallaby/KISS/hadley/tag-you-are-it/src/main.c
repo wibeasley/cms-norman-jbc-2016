@@ -2,14 +2,16 @@
 
 int main()
 {
+    printf("Hadley's Tag you are it\n");
+    
     printf("Move forward\n");
-    motor(0,45);
-    motor(3,34);
+    motor(0,55);
+    motor(3,55);
     msleep(5000);
     
     printf("Move backwards\n");
-    motor(0,-45);
-    motor(3,-34);
+    motor(0,-55);
+    motor(3,-55);
     msleep(5000);
            
     
