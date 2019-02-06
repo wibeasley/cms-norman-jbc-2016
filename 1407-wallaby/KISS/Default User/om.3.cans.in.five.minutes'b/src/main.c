@@ -17,7 +17,19 @@ int main()
     set_servo_position(3,513);
     msleep(3000);
     
+    printf("closes servo port 3\n");
+    set_servo_position(3,0);
+    msleep(2000);
     
+    printf("moves forward\n");
+    move(50,50,2345);
+    
+    printf("relese 1st can");
+    set_servo_position(3,543);
+    msleep(2345);
+    
+    printf("moves backward\n");
+    move(-50,-50,2345);
     
     
     

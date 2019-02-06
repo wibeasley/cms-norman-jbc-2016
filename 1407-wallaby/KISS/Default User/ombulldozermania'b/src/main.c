@@ -26,13 +26,13 @@ int main()
     move(58,38,1600);
    
     printf("moves motors forward/n");
-    move(55,55,6000);
+    move(55,55,4500);
     
     printf("moves  motors left\n");
-    move(78,38,6000);
+    move(78,38,4500);
     
     printf("moves motors forward\n");
-    move(55,55,7000);                           //complete!
+    move(55,55,7000);                           
     
     
     
