@@ -7,26 +7,25 @@
 #   If a wallaby is missing or out of range, the script will skip over it after the nmcli times out.
 #   Or temporarily comment out the Wallaby in the array below.
 bot_ssids=(
-  "1395-wallaby"  # B & B
-  "1397-wallaby"  # J & V
-  "1407-wallaby"  # M & O          # USB
+  #"1395-wallaby"  # 5: B & B
+  #"1397-wallaby"  # 5: J & V & M
+  #"1399-wallaby"  # 3: C & W
+  #"1407-wallaby"  # 5: M & O          # USB
+  #"1408-wallaby"  # 3: A & R
+  #"2486-wallaby"  # 4: L & M
+  #"2488-wallaby"  # 4: A & V
+  #"2494-wallaby"  # 4: C & D
+  #"4211-wallaby"  # 3: A & B
 
-  "2486-wallaby"  # L & M
-  "2488-wallaby"  # C & D
-  "2494-wallaby"  # A & V
-
-  "1399-wallaby"  #                # USB
-  "1408-wallaby"  # A & V          # USB
-
-  "Childrens House"
   #"BeasleyGuest2"
 )
 
 # The wifi network connected to the outside world. Necessary if commits are pushed to GitHub.com
 #network_ssid="BeasleyGuest2"
-#network_ssid="NETGEAR18"
+#network_ssid="State Fair"
+network_ssid="Childrens House"
 use_wifi=true
-# use_wifi=false
+#use_wifi=false
 
 if [ "$use_wifi" = true ] ; then
   url="192.168.125.1"  # For wifi connections to wallaby
@@ -43,7 +42,7 @@ do
   echo "Attempting to connect to $i."
 
   if [ "$use_wifi" = true ] ; then
-    nmcli con up $i
+    nmcli con up "$i"
     nmcli_return=$?
     echo "nmcli result: $nmcli_return (hint: a '0' means a successful connection)."
 
@@ -65,9 +64,9 @@ do
 
   echo "Attempting to download files from $i over $url."
   if [ "$use_wifi" = true ] ; then
-    scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
+    scp -r root@192.168.125.1:'~/Documents/KISS/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
   else
-    scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
+    scp -r root@192.168.124.1:'~/Documents/KISS/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
   fi
   #scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/
   #scp_args=`echo -r root@$url:'~/Documents/KISS/Default\\ User/' ~/Documents/kipr/cms-norman-jbc-2016/$i/`
@@ -89,9 +88,9 @@ git add -A
 git status
 # git commit -m "Update during class"
 
-nmcli con up $network_ssid
+nmcli con up "$network_ssid"
 sleep 5s
-echo "Network status to $network_ssid: $? (hint: a zero indicates a successful connection)."
+echo "Network status to [${network_ssid}]: $? (hint: a zero indicates a successful connection)."
 #git push # Uncomment to automatically push commits to GitHub.com
 
 # TODO:
