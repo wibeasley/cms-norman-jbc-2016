@@ -13,20 +13,20 @@ int main()
     enable_servos();
     set_servo_position(1,175);
     printf("Hello World\n");
-    
-    move(50, 50, 7000);
+
+    move(55, 50, 7500);
     move(0, 50, 2000);
-    move(50, 50, 1500);
+    move(50, 50, 2000);
     move(0, 50, 1500);
-    move(50, 50, 7100);
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    move(50, 50, 10000);
+
+
+
+
+
+
+
+
+
     return 0;
 }

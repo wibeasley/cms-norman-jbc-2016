@@ -13,12 +13,12 @@ enable_servos()
 set_servo_position(1,659)
 
 motor(0,50)
-motor(3,55)
+motor(3,52)
 msleep(4800)
     
 motor(0,0)
 motor(3,50)
-msleep(2000)
+msleep(2300)
 
 motor(0,50)
 motor(3,55)

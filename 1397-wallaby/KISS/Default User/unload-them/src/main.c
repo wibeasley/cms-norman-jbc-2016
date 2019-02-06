@@ -15,7 +15,7 @@ int main()
     
     printf("Go Forward\n");
     motor(0,50);
-    motor(3,50);
+    motor(3,54);
     msleep(2800);
     
     motor(0,0);
@@ -30,7 +30,7 @@ int main()
     printf("Go Backwards\n");
     motor(0,-50);
     motor(3,-50);
-    msleep(2500);
+    msleep(2300);
     
     printf("Hello World\n");
     motor(0,0);
@@ -56,17 +56,17 @@ int main()
     printf("Hello World\n");
     motor(0,50);
     motor(3,50);
-    msleep(2200);
+    msleep(2700);
     
     printf("Hello World\n");
     motor(3,50);
     motor(0,00);
-    msleep(800);
+    msleep(810);
     
     printf("Hello World\n");
     motor(0,50);
-    motor(3,50);
-    msleep(5800);
+    motor(3,55);
+    msleep(4800);
     
     printf("Go Backwards\n");
     motor(0,-50);
@@ -76,9 +76,9 @@ int main()
     printf("Hello World\n");
     motor(3,50);
     motor(0,0);
-    msleep(800);
+    msleep(1000);
     
-    printf("Hello World\n");
+    printf("Go forward\n");
     motor(0,50);
     motor(3,50);
     msleep(1800);

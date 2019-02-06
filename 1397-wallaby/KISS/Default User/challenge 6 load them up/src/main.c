@@ -1,5 +1,5 @@
 # include <kipr/botball.h>
-// in the middle
+// on the r
 int main()
 {
     
@@ -49,7 +49,7 @@ int main()
     motor(3,0);
     msleep(60);
     
-    set_servo_position(2,1630);
+    set_servo_position(2,1630); 
     msleep(960);
     
     printf("go backwards\n");
@@ -64,11 +64,7 @@ int main()
     
     set_servo_position(2,830);
     msleep(960);
-    
-    printf("go backwards\n");
-    motor(0,50);
-    motor(3,55);
-    msleep(2000);
+
     
     printf("Hello World\n");
     return 0;

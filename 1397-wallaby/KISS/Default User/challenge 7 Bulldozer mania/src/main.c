@@ -96,11 +96,7 @@ int main()
     
     motor(0,50);
     motor(3,50);
-    msleep(5500);
-    
-    motor(0,50);
-    motor(3,53);
-    msleep(900);
+    msleep(4500);
     
     motor(0,00);
     motor(3,00);
@@ -115,10 +111,6 @@ int main()
     motor(0,-60);
     motor(3,-60);
     msleep(5000);
-    
-    //motor(0,50);
-    //motor(3,50);
-    //msleep(1600);
     
     motor(0,00);
     motor(3,00);

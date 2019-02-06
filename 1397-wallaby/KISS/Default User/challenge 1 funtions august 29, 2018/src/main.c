@@ -1,5 +1,5 @@
-iw#include <kipr/botball.h>
-
+#include <kipr/botball.h>
+//11,7
 int move(int speed_left, int speed_right, int duration){
 
     motor(3, speed_left);
@@ -18,8 +18,8 @@ int main()
     
     
     printf("go straight\n");
-    move(50, 50, 3000);
-    move(50, 50, 3000);
+    move(53, 50, 3250);
+    move(53, 50, 3000);
 
 	printf("go straight\n");
     move(-50, -50, 3000);
