@@ -9,13 +9,13 @@
 bot_ssids=(
   #"1395-wallaby"  # H & B
   #"1397-wallaby"  # J & L
-  "1399-wallaby"  # E & V          # USB
+  #"1399-wallaby"  # E & V          # USB
   #"1407-wallaby"  # M & B          # USB
   #"1408-wallaby"  # M & M          # USB
   #"2486-wallaby"  # V & C
   #"2488-wallaby"  # M & A
   #"2494-wallaby"  # D & L
-  #"4211-wallaby"  # A & B
+  "4211-wallaby"  # A & B
 
   #"BeasleyGuest2"
 )
