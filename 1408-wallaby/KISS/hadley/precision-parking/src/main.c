@@ -2,11 +2,11 @@
 
 int main()
 {
-    // Start at	K-J 
+    // Start at	K
     printf("Hadley's Precision Parking\n");
     
     printf("Move forward\n");
-    motor (0,39);
+    motor (0,00);
     motor(3,39);
     msleep(7000);
     

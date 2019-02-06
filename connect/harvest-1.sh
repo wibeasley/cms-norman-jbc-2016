@@ -7,22 +7,23 @@
 #   If a wallaby is missing or out of range, the script will skip over it after the nmcli times out.
 #   Or temporarily comment out the Wallaby in the array below.
 bot_ssids=(
-  #"1395-wallaby"  # H & B
-  #"1397-wallaby"  # J & L
-  #"1399-wallaby"  # E & V          # USB
-  #"1407-wallaby"  # M & B          # USB
-  "1408-wallaby"  # M & M          # USB
-  #"2486-wallaby"  # V & C
-  #"2488-wallaby"  # M & A
-  #"2494-wallaby"  # D & L
-  #"4211-wallaby"  # A & B
+  #"1395-wallaby"  # 5: B & B
+  #"1397-wallaby"  # 5: J & V & M
+  #"1399-wallaby"  # 3: C & W
+  #"1407-wallaby"  # 5: M & O          # USB
+  #"1408-wallaby"  # 3: A & R
+  #"2486-wallaby"  # 4: L & M
+  #"2488-wallaby"  # 4: A & V
+  #"2494-wallaby"  # 4: C & D
+  #"4211-wallaby"  # 3: A & B
 
   #"BeasleyGuest2"
 )
 
 # The wifi network connected to the outside world. Necessary if commits are pushed to GitHub.com
 #network_ssid="BeasleyGuest2"
-network_ssid="State Fair"
+#network_ssid="State Fair"
+network_ssid="Childrens House"
 use_wifi=true
 #use_wifi=false
 
@@ -87,9 +88,9 @@ git add -A
 git status
 # git commit -m "Update during class"
 
-nmcli con up $network_ssid
+nmcli con up ${network_ssid}
 sleep 5s
-echo "Network status to $network_ssid: $? (hint: a zero indicates a successful connection)."
+echo "Network status to ${network_ssid}: $? (hint: a zero indicates a successful connection)."
 #git push # Uncomment to automatically push commits to GitHub.com
 
 # TODO:
