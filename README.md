@@ -29,13 +29,29 @@ Helpful Links:
 
 ## Troubleshooting Tips
 
-1. check power on laptop & robot.
+1. use `printf()` statements to isolate the problematic behavior.
+1. check power for laptop & robot.
 1. check connectivity with ping (see above).
 1. check the program is saving & compiling correctly.
 1. servo instructions should be followed by 500+ msec of `msleep()` duration.
-1. use `printf()` statements to isolate the problematic execution.
-1. check you're on the correct user & program (within the IDE.
+1. check you're on the correct user & program (within the IDE).
+1. if there are problems with motors/servos
+    1. correct port numbers are specified in the code.
+    1. motors/servos work through the Wallaby test GUI.
 1. if a program doesn't appear in the Wallaby list:
-    1. program saved & compiled
-    1. you're looking under the correct user (which may not be the default user)
-    1. for brand-new programs, go back to home, then return to list
+    1. check the program is saved & compiled in the IDE.
+    1. check you're looking under the correct user (which may not be `Default User`).
+    1. go to home, then return to list (especially for brand-new programs).
+
+## General Tips
+
+1. Avoid more then 40% power to wheel motors.
+1. Avoid switching motor directions abruptly. Pad with
+    ```c
+    motor(0, 0);
+    motor(3, 0);
+    msleep(500);
+    ```
+1. Servos arms are 'aligned' and never hit resisitance.
+1. Wires are tidy, and can't be pinched.
+1. An instructor should install & align the servo arms.
