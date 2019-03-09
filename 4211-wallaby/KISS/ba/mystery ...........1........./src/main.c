@@ -6,54 +6,66 @@ int main()
  enable_servos();
 set_servo_position(1,1439);
 set_servo_position(2,1668);
-printf("hhj\n");
+printf("spin");
 motor(0,55);			
 motor(3,-55); 
 msleep(1000);	
-printf("odys awesome");
+printf("move forwards");
 motor(0,55);
 motor(3,55);
 msleep(1800);
     set_servo_position(2,1169);
+    set_servo_position(1,1217);
     
-    
-printf("odys awesome");
+printf("move backwards");
 motor(0,-55);
 motor(3,-55);
 msleep(1000);
     
     
-printf("Adam is awesome ");
+printf("move backwards");
 motor(3,-55);
 motor(0,-55);      
 msleep(500);
-    printf("Adam is awesome ");
+    printf("spin ");
 motor(3,55);
 motor(0,-55);      
 msleep(1000);
     
-printf("");
+printf("move forward");
     motor(3,55);
     motor(0,55);
-    msleep(8000);
+    msleep(9999);
     
-    printf("");
+    printf("spin");
     motor(3,-55);
     motor(0,55);
     msleep(5000);
-    printf("");
+    printf("move forward");
     motor(3,55);
     motor(0,55);
-    msleep(2500);
-    printf("O");
+    msleep(4000);
+    printf("turn left ");
      motor(3,-22);
     motor(0,55);
     msleep(800);  
-    printf("O");
+    printf("move forward ");
      motor(3,-22);
     motor(0,55);
-    msleep(1000);
+    msleep(800);  
     
+    
+    printf("turn left ");
+     motor(3,-22);
+    motor(0,32);
+    msleep(300);
+    
+    
+     printf("turn left ");
+     motor(3,55);
+    motor(0,55);
+    msleep(3000);
+    printf("move forward");
    
     
     
