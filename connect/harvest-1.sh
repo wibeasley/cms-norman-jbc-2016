@@ -107,10 +107,10 @@ echo "Network status to [${network_ssid}]: $? (hint: a zero indicates a successf
 #     * this allows the teacher to merely glance at which Wallabies need attention.
 
 # Manual update over USB
-# scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/1397-wallaby/
+# scp -r root@192.168.124.1:'~/Documents/KISS/' ~/Documents/kipr/cms-norman-jbc-2016/1397-wallaby/
 
 # Manual update over wifi
-# scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/1397-wallaby/
+# scp -r root@192.168.125.1:'~/Documents/KISS/' ~/Documents/kipr/cms-norman-jbc-2016/1397-wallaby/
 
 # References:
 # - https://stackoverflow.com/questions/26824596/how-can-i-pipe-the-hostname-into-a-call-to-ssh

@@ -12,7 +12,7 @@ Helpful Links:
 
 ## Minimum Structure
 
-1. project file name 
+1. project file name
     1. Create under a NON-default user.
     1. Contains only lowercase numbers, digits, and dashes.  
     1. No uppercase letters, spaces, underscores, or special characters like exclamation points.
@@ -45,13 +45,15 @@ Helpful Links:
 
 ## General Tips
 
-1. Avoid more then 40% power to wheel motors.
+1. avoid more then 40% power to wheel motors<br/>
+(*ie* `motor(0, 45);` is too fast).
 1. Avoid switching motor directions abruptly. Pad with
     ```c
+    printf("Pause movement\n");
     motor(0, 0);
     motor(3, 0);
     msleep(500);
     ```
-1. Servos arms are 'aligned' and never hit resisitance.
-1. Wires are tidy, and can't be pinched.
-1. An instructor should install & align the servo arms.
+1. servos arms are 'aligned' and never hit resistance.
+1. wires are tidy, and can't be pinched or wind around axles.
+1. an instructor should install & align the servo arms.
