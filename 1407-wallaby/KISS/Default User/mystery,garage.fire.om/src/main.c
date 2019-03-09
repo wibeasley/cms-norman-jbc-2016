@@ -44,8 +44,17 @@ int main()
     printf("turns left\n");
     move(50,-50,900);
     printf("moves forward\n");
-    move(50,50,1000);
-    
+    move(50,50,3000);
+    printf("turns left\n");
+    move(50,-50,700);
+    ao();
+    printf("drops cubes in square\n");
+    set_servo_position(0,1627);
+    msleep(2500);
+    ao();
+    //set_servo_position(3,565);
+    //msleep(2500);
+    //ao();
     
     return 0;
 }

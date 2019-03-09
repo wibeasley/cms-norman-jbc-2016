@@ -8,12 +8,12 @@ int main()
     
     printf("go straight\n");
     motor(0,50);
-    motor(3,53);
+    motor(3,52.5);
     msleep(2500);
     
     printf("go back\n");
     motor(0,-50);
-    motor(3,-55);
+    motor(3,-52.5);
     msleep(1000);
     
     printf("turn\n");
@@ -23,7 +23,7 @@ int main()
     
     printf("go straight\n");
     motor(0,50);
-    motor(3,55);
+    motor(3,52.5);
     msleep(1500);
     
     enable_servos();
@@ -33,12 +33,12 @@ int main()
     printf("turn\n");
     motor(3,25);
     motor(0,-10);
-    msleep(1500);
+    msleep(1600);
   
      printf("go forward\n");
-     motor(3,50);
-     motor(0,53);
-     msleep(4000);
+     motor(3,52.5);
+     motor(0,50);
+     msleep(4500);
      
     enable_servos();
     set_servo_position(1,982);
@@ -50,19 +50,59 @@ int main()
     msleep(6000);
     
     printf("go backward\n");
-     motor(3,-50);
+     motor(3,-52.5);
      motor(0,-50);
      msleep(100);
     
+    motor(0,0);
+    motor(3,0);
+    msleep(1000);
+    
      printf("go forward\n");
-     motor(3,50);
+     motor(3,52.5);
      motor(0,50);
-     msleep(300);
+     msleep(600);
     
     enable_servos();
     set_servo_position(1,982);
     set_servo_position(2,1317);
     
+    motor(0,0);
+    motor(3,0);
+    msleep(1000);
     
+     printf("go backward\n");
+     motor(3,-52.5);
+     motor(0,-50);
+     msleep(1000);
+    
+    printf("turn\n");
+    motor(3,-10);
+    motor(0,25);
+    msleep(1500);
+    
+    printf("go forward\n");
+     motor(3,52.5);
+     motor(0,50);
+     msleep(3000);
+    
+    enable_servos();
+    set_servo_position(1,982);
+    set_servo_position(2,752);
+    
+    printf("go backward\n");
+     motor(3,-52.5);
+     motor(0,-50);
+     msleep(2000);
+    
+    printf("turn\n");
+    motor(3,25);
+    motor(0,-10);
+    msleep(30);
+    
+    printf("go forward\n");
+     motor(3,52.5);
+     motor(0,50);
+     msleep(10);
     return 0;
 }
