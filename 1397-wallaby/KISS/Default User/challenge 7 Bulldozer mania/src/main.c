@@ -5,7 +5,7 @@ int main()
 {
     printf("Hello World\n");
     enable_servos();
-    set_servo_position(1,1146);//parrallel to the ground
+    set_servo_position(1,988);//parrallel to the ground
     msleep(800);
     set_servo_position(2,1281);//open claw
     msleep(800);
@@ -41,7 +41,7 @@ int main()
     motor(3,00);
     msleep(300);
 
-    set_servo_position(1,1146);//parrallel to the ground
+    set_servo_position(1,988);//parrallel to the ground
     msleep(800);
     set_servo_position(2,1281);//open claw
     msleep(800);
@@ -77,7 +77,7 @@ int main()
     motor(3,00);
     msleep(300);
     
-    set_servo_position(1,1146);//parrallel to the ground
+    set_servo_position(1,988);//parrallel to the ground
     msleep(800);
     set_servo_position(2,1281);//open claw
     msleep(800);
@@ -95,7 +95,7 @@ int main()
     msleep(1000);
     
     motor(0,50);
-    motor(3,50);
+    motor(3,52);
     msleep(4500);
     
     motor(0,00);
@@ -116,7 +116,7 @@ int main()
     motor(3,00);
     msleep(300);
     
-    set_servo_position(1,1146);//parrallel to the ground
+    set_servo_position(1,988);//parrallel to the ground
     msleep(800);
     set_servo_position(2,1281);//open claw
     msleep(800);

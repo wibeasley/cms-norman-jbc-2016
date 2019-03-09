@@ -50,7 +50,38 @@ int main()
     msleep(2000);
     
      printf("down\n");
-    set_servo_position(1,1460);
+    set_servo_position(1,1260);
+    
+    printf("go straight 4\n");
+        motor(0,55);
+        motor(3,50);
+        msleep(2000);
+
+        printf("go back 4\n");
+        motor(0,-50);
+        motor(3,-50);
+        msleep(2000);
+        //spin();
+        //stop();
+        
+//i=i+1;
+    
+    
+    
+    
+    printf("go straight 5\n");
+    motor(0,55);
+    motor(3,50);
+    msleep(2000);
+    
+    printf("go back 5\n");
+    motor(0,-50);
+    motor(3,-50);
+    msleep(2000);
+    enable_servos();
+    printf("up\n");
+    set_servo_position(1,708);
+    
     
     printf("turn right 1\n");
     motor(0,00);
@@ -63,15 +94,6 @@ int main()
     motor(0,40);
     msleep(2000);
     
-    printf("go straight 4\n");
-    motor(0,55);
-    motor(3,50);
-    msleep(1000);
-    
-    printf("go back 4\n");
-    motor(0,-50);
-    motor(3,-50);
-    msleep(2000);
     
     printf("turn right 2\n");
     motor(0,00);
@@ -93,10 +115,7 @@ int main()
     motor(0,00);
     msleep(6000);
     
-    printf("go back 5\n");
-    motor(0,-50);
-    motor(3,-51);
-    msleep(2000);
+
     
     
     printf("turn right 3\n");
