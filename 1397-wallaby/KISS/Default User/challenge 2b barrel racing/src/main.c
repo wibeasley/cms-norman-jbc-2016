@@ -7,39 +7,25 @@ int main()
     
     printf("Hello World\n");
     motor(0,50);
-    motor(3,53);
-    msleep(4000);
-    
-    motor(0,55);
-    motor(3,54);
-    msleep(4900);
+    motor(3,56);
+    msleep(11000);
     
     motor(0,00);
     motor(3,50);
     msleep(2500);
     
     motor(0,50);
-    motor(3,50);
-    msleep(4000);
+    motor(3,56);
+    msleep(7000);
     
     motor(0,00);
     motor(3,50);
-    msleep(2300);
+    msleep(2500);
     
     motor(0,50);
-    motor(3,50);
-    msleep(4000);
-    
-    motor(0,00);
-    motor(3,50);
-    msleep(2400);
-    
-    motor(0,50);
-    motor(3,55);
-    msleep(4000);
-    
-    motor(0,55);
-    motor(3,50);
-    msleep(6000);
+    motor(3,56);
+    msleep(13000);
+   
+   
     return 0;
 }
