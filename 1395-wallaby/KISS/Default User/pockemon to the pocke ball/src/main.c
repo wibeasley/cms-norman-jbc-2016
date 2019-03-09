@@ -1,7 +1,10 @@
 #include <kipr/botball.h>
 
 int main()
-{
+{   
+    enable_servos();
+    set_servo_position(0,1830);
+    set_servo_position(1,1419);
     printf("go strait\n");
     motor(0,63);
     motor(3,60);
@@ -70,14 +73,14 @@ int main()
     printf("turn left\n");
     motor(0,50);
     motor(3,00);
-    msleep(1500);
+    msleep(2000);
     
     printf("go strait\n");
     motor(0,60);
     motor(3,60);
     msleep(1000);
     
-    
+    disable_servos();
     
     
     
