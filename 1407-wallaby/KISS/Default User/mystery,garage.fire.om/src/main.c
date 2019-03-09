@@ -14,16 +14,37 @@ int main()
     printf("Hello World\n");
     printf("activates claws\n");
     enable_servos(0,3);
-    set_servo_position(0,1566);
+    set_servo_position(0,1625);
     set_servo_position(3,575);
     msleep(2500);
     ao();
     
     printf("turns left\n");
     move(-50,50,2500);
+    ao();
+    printf("moves forward\n");         // servo 0 1625
+    move(30,30,2200);
+    ao();
     printf("closes claw\n");
     set_servo_position(3,0);
-    
+    msleep(2500);
+    ao();
+    printf("lifts up claw\n");
+    set_servo_position(0,554);
+    msleep(2500);
+    ao();
+    printf("turns right\n");
+    move(-50,50,700);
+    printf("moves forward\n");
+    move(50,50,3000);
+    printf("turns right a little bit\n");
+    move(-50,50,300);
+    printf("moves forward\n");
+    move(50,50,5000);
+    printf("turns left\n");
+    move(50,-50,900);
+    printf("moves forward\n");
+    move(50,50,1000);
     
     
     return 0;

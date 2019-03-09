@@ -1,10 +1,9 @@
 #include <kipr/botball.h>
 
-int main()
-{
+int main() {
     printf("move forward\n"); //start between the T and the U
     motor (0,30);
-    motor(3,30);
+    motor(3,31);
     msleep (10000);
  printf("move backwards\n");
     motor (0,-30);
@@ -13,11 +12,16 @@ int main()
   printf("move forward\n");
   motor(0,30);
   motor(3,30);
-msleep(20000);
- printf("move backwards\n");
+msleep(10000);
+     
+     printf("turn right\n");
+ motor(0,20);
+    motor(3,30);
+    msleep(6000);
+/* printf("move backwards\n");
   motor(0,-20);  
  motor(3,-20);        
- msleep(20000);       
+ msleep(12000);*/       
     
   return 0;
 }
