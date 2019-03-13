@@ -6,9 +6,9 @@ int main()
     printf("Hadley's Precision Parking\n");
     
     printf("Move forward\n");
-    motor (0,00);
-    motor(3,39);
-    msleep(7000);
+    motor (0,1200);
+    motor (3,1300);
+    msleep(2000);
     
     printf("move back\n");
     motor(0,-29);

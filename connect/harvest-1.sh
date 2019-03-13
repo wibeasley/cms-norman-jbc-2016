@@ -9,15 +9,13 @@
 bot_ssids=(
   #"1395-wallaby"  # 5: B & B
   #"1397-wallaby"  # 5: J & V & M
-  #"1399-wallaby"  # 3: C & W
+  "1399-wallaby"  # 3: C & W
   #"1407-wallaby"  # 5: M & O          # USB
-  #"1408-wallaby"  # 3: A & R
+  "1408-wallaby"  # 3: A & R
   #"2486-wallaby"  # 4: L & M
   #"2488-wallaby"  # 4: A & V
   #"2494-wallaby"  # 4: C & D
-  #"4211-wallaby"  # 3: A & B
-
-  #"BeasleyGuest2"
+  "4211-wallaby"  # 3: A & B
 )
 
 # The wifi network connected to the outside world. Necessary if commits are pushed to GitHub.com
@@ -106,11 +104,15 @@ echo "Network status to [${network_ssid}]: $? (hint: a zero indicates a successf
 # * outputs a temporary text file that indicates how long it's been since each Wallaby has been successfully backed up.
 #     * this allows the teacher to merely glance at which Wallabies need attention.
 
+# Manual restore over USB
+#scp -r ~/Documents/kipr/cms-norman-jbc-2016/2488-wallaby/ root@192.168.124.1:'~/Documents/KISS/'
+
+
 # Manual update over USB
-# scp -r root@192.168.124.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/1397-wallaby/
+# scp -r root@192.168.124.1:'~/Documents/KISS/' ~/Documents/kipr/cms-norman-jbc-2016/1397-wallaby/
 
 # Manual update over wifi
-# scp -r root@192.168.125.1:'~/Documents/KISS/Default\ User/' ~/Documents/kipr/cms-norman-jbc-2016/1397-wallaby/
+# scp -r root@192.168.125.1:'~/Documents/KISS/' ~/Documents/kipr/cms-norman-jbc-2016/1397-wallaby/
 
 # References:
 # - https://stackoverflow.com/questions/26824596/how-can-i-pipe-the-hostname-into-a-call-to-ssh

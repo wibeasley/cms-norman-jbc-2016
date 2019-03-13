@@ -12,7 +12,7 @@ int main()
     printf("Hello World\n");
     printf("prepare servos for solo joust\n");
     enable_servos(0,3);
-    set_servo_position(3,539);
+    set_servo_position(3,644);
     set_servo_position(0,1537);
     msleep(2500);
     ao();

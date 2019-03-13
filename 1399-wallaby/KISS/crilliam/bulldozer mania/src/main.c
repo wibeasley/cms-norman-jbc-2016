@@ -2,7 +2,7 @@
 
 int main()
 {
-    printf("Hello World\n");
+    printf("Hello World\n");//l6
     motor (0,69);
     motor (3,69);
     msleep(7500);
@@ -12,5 +12,6 @@ int main()
     motor (0,80);
     motor (3,80);
     msleep(6000);
+    
     return 0;
 }

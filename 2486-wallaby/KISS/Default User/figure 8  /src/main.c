@@ -1,6 +1,6 @@
 
 #include <kipr/botball.h>
-int main()
+int main()//line up the black thing with 0(black line)B 2 line
 {
 printf("Go Straight\n");
 motor(3,35); 
@@ -21,21 +21,21 @@ printf("go left/n");
 motor(3,37);
 motor(0,80);
 msleep(12000);
-
+    
 printf("go straight\n");
 motor(3,60);
 motor(0,60);
 msleep(5000);    
 
-printf("turn left/n");
-motor(3,50);
-motor(0,60);
+printf("turn right/n");
+motor(3,40);
+motor(0,30);
 msleep(2000);    
     
 printf("turn right/n");
-motor(3,46);
-motor(0,40);
-msleep(3500);
+motor(3,40);
+motor(0,48);
+msleep(3000);
     
 return 0;    
 }   

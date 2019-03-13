@@ -119,8 +119,10 @@ int main()
     
 set_servo_position(0,890);
 msleep(3000);    
-    
-    
+set_servo_position(0,1829);
+msleep(3000);    
+ set_servo_position(0,890);
+msleep(3000);    
     
     
     
