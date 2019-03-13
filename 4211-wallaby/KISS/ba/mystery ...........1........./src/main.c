@@ -4,17 +4,17 @@ int main()
 {
     
  enable_servos();
-set_servo_position(1,1439);
-set_servo_position(2,1668);
+set_servo_position(1,1294);
+set_servo_position(2,2047);
 printf("spin");
 motor(0,55);			
 motor(3,-55); 
 msleep(1000);	
 printf("move forwards");
-motor(0,55);
+motor(0,55)
 motor(3,55);
 msleep(1800);
-    set_servo_position(2,1169);
+    set_servo_position(2,116);
     set_servo_position(1,1217);
     
 printf("move backwards");
@@ -68,6 +68,6 @@ printf("move forward");
     printf("move forward");
    
     
-    
+   
      return 0;
 }

@@ -52,7 +52,7 @@ int main()
     msleep(1000);
          printf("open claw");
     enable_servos ();
-    set_servo_position (2,900);
+    set_servo_position (2,910);
     msleep(500);
     enable_servos ();
     set_servo_position (3,480);
@@ -85,7 +85,7 @@ int main()
     msleep(500);
     motor (0,40);
     motor (3,5);
-    msleep(400);
+    msleep(00);
            printf("arm up");
     enable_servos ();
     set_servo_position (3,967);
@@ -96,6 +96,9 @@ int main()
            printf("arm down");
     set_servo_position (3,1780);
     msleep(500);
+    motor (0,30);
+    motor (3,40);
+    msleep(700);
     set_servo_position (2,1092);
     msleep(500);
      return 0;                                                                                                                                                                                  
