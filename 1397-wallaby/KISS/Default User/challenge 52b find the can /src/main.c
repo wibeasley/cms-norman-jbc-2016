@@ -8,7 +8,7 @@ int main()
     set_servo_position(2,736);
     while (analog(5)<=2925){
         motor(0,50);
-        motor(3,50);
+        motor(3,54.8);
         msleep(100);
     }
     
@@ -16,8 +16,8 @@ int main()
     msleep(100);
     
     motor(0,50);
-    motor(3,50);
-    msleep(1000);
+    motor(3,52);
+    msleep(1400);
     
     motor(0,0);
     motor(3,0);
@@ -27,7 +27,7 @@ int main()
     msleep(100);
     
     motor(0,-50);
-    motor(3,-50);
+    motor(3,-59);
     msleep(11010);
     
     return 0;
