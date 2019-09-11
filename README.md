@@ -10,7 +10,7 @@ Helpful Links:
 ----------------
 
 
-## Minimum Structure
+## Minimum Structure within a File/Program
 
 1. project file name
     1. Create under a NON-default user.
@@ -23,9 +23,11 @@ Helpful Links:
     1. at the top of execution, display the robot's starting position on the mat.  (Ideally the position of the vertical black lego attached great the front of the robot.) For example, "B, -3".
     1. at the top of each "chunk" of code, display the chunk's intent.  For example, "go straight", "turn left", "raise vertical servo", "close claw", "push cans back"...
 1. if servos are used, set their starting position at the file's beginning.
-1. before connecting to the IDE, ping the robot.  On a Chromebook with a Chrome browser open, hit ctrl+alt+t.  
-    1. over wifi, `ping 192.168.125.1`
-    1. over usb, `ping 192.168.124.1`
+1. before connecting to the IDE, ping the robot.  
+    1. open a "terminal" with `ctrl + alt + t` (on a Chromebook with a Chrome browser open).
+    1. "ping" the botball/wallaby to see if it responds:
+        1. over wifi, `ping 192.168.125.1`
+        1. over usb, `ping 192.168.124.1`
 
 ## Troubleshooting Tips
 
@@ -54,6 +56,36 @@ Helpful Links:
     motor(3, 0);
     msleep(500);
     ```
-1. servos arms are 'aligned' and never hit resistance.
+    
+    So instead of this jerky code:
+    
+    ```c
+    printf("Move forward.\n");
+    motor(0,  40);
+    msleep(500);
+    printf("Move backward.\n");
+    motor(0, -40);
+    msleep(500);
+    ```
+    
+    Include a pause like:
+    
+    ```c
+    printf("Move forward.\n");
+    motor(0,  40);
+    msleep(500);
+        
+    printf("Pause movement\n");
+    motor(0, 0);
+    motor(3, 0);
+    msleep(500);
+    
+    printf("Move backward.\n");
+    motor(0, -40);
+    msleep(500);
+    ```
+        
+    
+1. servos arms should be 'aligned' and never hit resistance.
 1. wires are tidy, and can't be pinched or wind around axles.
 1. an instructor should install & align the servo arms.
