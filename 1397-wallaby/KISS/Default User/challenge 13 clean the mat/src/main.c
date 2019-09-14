@@ -98,11 +98,12 @@ int main()
     printf("turn\n");
     motor(3,25);
     motor(0,-10);
-    msleep(30);
+    msleep(400);
     
     printf("go forward\n");
      motor(3,52.5);
      motor(0,50);
-     msleep(10);
+     msleep(40);
+   
     return 0;
 }
